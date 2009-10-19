@@ -3,7 +3,10 @@
 	2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 2AFC3E2B108C3F3E0005EFAB /* MeetingTime2 */;
-		activeTarget = 8D15AC270486D014006FF6A4 /* MeetingTime2 */;
+		activeTarget = 2AFC3E55108C3FCF0005EFAB /* Test */;
+		addToTargets = (
+			2AFC3E55108C3FCF0005EFAB /* Test */,
+		);
 		codeSenseManager = 2AFC3E3F108C3F410005EFAB /* Code sense */;
 		executables = (
 			2AFC3E2B108C3F3E0005EFAB /* MeetingTime2 */,
@@ -16,7 +19,7 @@
 					20,
 					364,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -31,8 +34,38 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					324,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
 			PBXPerProjectTemplateStateSaveDate = 277626686;
 			PBXWorkspaceStateSaveDate = 277626686;
+		};
+		perUserProjectItems = {
+			2AFC3E63108C40200005EFAB /* PBXTextBookmark */ = 2AFC3E63108C40200005EFAB /* PBXTextBookmark */;
+			2AFC3E64108C40200005EFAB /* PBXTextBookmark */ = 2AFC3E64108C40200005EFAB /* PBXTextBookmark */;
+			2AFC3E65108C40300005EFAB /* PBXTextBookmark */ = 2AFC3E65108C40300005EFAB /* PBXTextBookmark */;
+			2AFC3E68108C40310005EFAB /* PBXTextBookmark */ = 2AFC3E68108C40310005EFAB /* PBXTextBookmark */;
+			2AFC3E71108C40370005EFAB /* PBXTextBookmark */ = 2AFC3E71108C40370005EFAB /* PBXTextBookmark */;
+			2AFC3E72108C40460005EFAB /* PBXTextBookmark */ = 2AFC3E72108C40460005EFAB /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2AFC3E3E108C3F410005EFAB /* Source Control */;
 		userBuildSettings = {
@@ -54,6 +87,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -61,6 +95,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = MeetingTime2;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
@@ -78,6 +114,76 @@
 	2AFC3E3F108C3F410005EFAB /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	2AFC3E4A108C3FA90005EFAB /* Person.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {542, 585}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 142}";
+		};
+	};
+	2AFC3E55108C3FCF0005EFAB /* Test */ = {
+		activeExec = 0;
+	};
+	2AFC3E63108C40200005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */;
+		name = "Person.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 142;
+		vrLoc = 0;
+	};
+	2AFC3E64108C40200005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */;
+		name = "Person.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 142;
+		vrLoc = 0;
+	};
+	2AFC3E65108C40300005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */;
+		name = "Person.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 138;
+		vrLoc = 0;
+	};
+	2AFC3E68108C40310005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */;
+		name = "Person.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 138;
+		vrLoc = 0;
+	};
+	2AFC3E71108C40370005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */;
+		name = "Person.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 162;
+		vrLoc = 0;
+	};
+	2AFC3E72108C40460005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */;
+		name = "Person.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 142;
+		vrLoc = 0;
 	};
 	8D15AC270486D014006FF6A4 /* MeetingTime2 */ = {
 		activeExec = 0;
