@@ -333,7 +333,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>2AFC3E38108C3F410005EFAB</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Person.m</string>
+								<string>TestPerson.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -341,14 +341,15 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>2AFC3E39108C3F410005EFAB</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Person.m</string>
+										<string>TestPerson.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2AFC3E81108C40B80005EFAB</string>
+										<string>2AFC3EA1108C422A0005EFAB</string>
 										<key>history</key>
 										<array>
-											<string>2AFC3E71108C40370005EFAB</string>
+											<string>2AFC3E92108C41E50005EFAB</string>
+											<string>2AFC3E93108C41E50005EFAB</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -648,7 +649,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>277627064.06720698</real>
+	<real>277627434.41698301</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>

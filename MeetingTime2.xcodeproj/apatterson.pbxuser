@@ -67,6 +67,12 @@
 			2AFC3E71108C40370005EFAB /* PBXTextBookmark */ = 2AFC3E71108C40370005EFAB /* PBXTextBookmark */;
 			2AFC3E72108C40460005EFAB /* PBXTextBookmark */ = 2AFC3E72108C40460005EFAB /* PBXTextBookmark */;
 			2AFC3E81108C40B80005EFAB /* PBXTextBookmark */ = 2AFC3E81108C40B80005EFAB /* PBXTextBookmark */;
+			2AFC3E92108C41E50005EFAB /* PBXTextBookmark */ = 2AFC3E92108C41E50005EFAB /* PBXTextBookmark */;
+			2AFC3E93108C41E50005EFAB /* XCBuildMessageTextBookmark */ = 2AFC3E93108C41E50005EFAB /* XCBuildMessageTextBookmark */;
+			2AFC3E94108C41E50005EFAB /* PBXTextBookmark */ = 2AFC3E94108C41E50005EFAB /* PBXTextBookmark */;
+			2AFC3E9B108C42060005EFAB /* PBXTextBookmark */ = 2AFC3E9B108C42060005EFAB /* PBXTextBookmark */;
+			2AFC3E9E108C42220005EFAB /* PBXTextBookmark */ = 2AFC3E9E108C42220005EFAB /* PBXTextBookmark */;
+			2AFC3EA1108C422A0005EFAB /* PBXTextBookmark */ = 2AFC3EA1108C422A0005EFAB /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2AFC3E3E108C3F410005EFAB /* Source Control */;
 		userBuildSettings = {
@@ -125,6 +131,13 @@
 	};
 	2AFC3E55108C3FCF0005EFAB /* Test */ = {
 		activeExec = 0;
+	};
+	2AFC3E5E108C400C0005EFAB /* TestPerson.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {542, 520}}";
+			sepNavSelRange = "{845, 0}";
+			sepNavVisRange = "{666, 179}";
+		};
 	};
 	2AFC3E63108C40200005EFAB /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -195,6 +208,65 @@
 		rType = 0;
 		vrLen = 142;
 		vrLoc = 0;
+	};
+	2AFC3E92108C41E50005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */;
+		name = "Person.m: 25";
+		rLen = 0;
+		rLoc = 342;
+		rType = 0;
+		vrLen = 142;
+		vrLoc = 0;
+	};
+	2AFC3E93108C41E50005EFAB /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "retain count should be decremented";
+		fRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 35;
+		rType = 1;
+	};
+	2AFC3E94108C41E50005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */;
+		name = "TestPerson.m: 40";
+		rLen = 0;
+		rLoc = 845;
+		rType = 0;
+		vrLen = 179;
+		vrLoc = 666;
+	};
+	2AFC3E9B108C42060005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */;
+		name = "TestPerson.m: 40";
+		rLen = 0;
+		rLoc = 845;
+		rType = 0;
+		vrLen = 179;
+		vrLoc = 666;
+	};
+	2AFC3E9E108C42220005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */;
+		name = "TestPerson.m: 40";
+		rLen = 0;
+		rLoc = 845;
+		rType = 0;
+		vrLen = 179;
+		vrLoc = 666;
+	};
+	2AFC3EA1108C422A0005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */;
+		name = "TestPerson.m: 40";
+		rLen = 0;
+		rLoc = 845;
+		rType = 0;
+		vrLen = 179;
+		vrLoc = 666;
 	};
 	8D15AC270486D014006FF6A4 /* MeetingTime2 */ = {
 		activeExec = 0;

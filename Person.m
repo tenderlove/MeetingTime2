@@ -21,4 +21,11 @@
   return self;
 }
 
+- (void)dealloc
+{
+  [self setName:nil];
+  [self setHourlyRate:nil];
+  [super dealloc];
+}
+
 @end
