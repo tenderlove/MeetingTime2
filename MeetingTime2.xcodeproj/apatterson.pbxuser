@@ -3,7 +3,7 @@
 	2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 2AFC3E2B108C3F3E0005EFAB /* MeetingTime2 */;
-		activeTarget = 2AFC3E55108C3FCF0005EFAB /* Test */;
+		activeTarget = 8D15AC270486D014006FF6A4 /* MeetingTime2 */;
 		addToTargets = (
 			2AFC3E55108C3FCF0005EFAB /* Test */,
 		);
@@ -73,6 +73,8 @@
 			2AFC3E9B108C42060005EFAB /* PBXTextBookmark */ = 2AFC3E9B108C42060005EFAB /* PBXTextBookmark */;
 			2AFC3E9E108C42220005EFAB /* PBXTextBookmark */ = 2AFC3E9E108C42220005EFAB /* PBXTextBookmark */;
 			2AFC3EA1108C422A0005EFAB /* PBXTextBookmark */ = 2AFC3EA1108C422A0005EFAB /* PBXTextBookmark */;
+			2AFC3EA8108C42E00005EFAB /* PBXTextBookmark */ = 2AFC3EA8108C42E00005EFAB /* PBXTextBookmark */;
+			2AFC3EA9108C42E20005EFAB /* PBXTextBookmark */ = 2AFC3EA9108C42E20005EFAB /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2AFC3E3E108C3F410005EFAB /* Source Control */;
 		userBuildSettings = {
@@ -124,9 +126,9 @@
 	};
 	2AFC3E4A108C3FA90005EFAB /* Person.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {542, 325}}";
-			sepNavSelRange = "{342, 0}";
-			sepNavVisRange = "{0, 142}";
+			sepNavIntBoundsRect = "{{0, 0}, {749, 429}}";
+			sepNavSelRange = "{432, 0}";
+			sepNavVisRange = "{0, 162}";
 		};
 	};
 	2AFC3E55108C3FCF0005EFAB /* Test */ = {
@@ -259,6 +261,26 @@
 		vrLoc = 666;
 	};
 	2AFC3EA1108C422A0005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */;
+		name = "TestPerson.m: 40";
+		rLen = 0;
+		rLoc = 845;
+		rType = 0;
+		vrLen = 179;
+		vrLoc = 666;
+	};
+	2AFC3EA8108C42E00005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */;
+		name = "TestPerson.m: 40";
+		rLen = 0;
+		rLoc = 845;
+		rType = 0;
+		vrLen = 179;
+		vrLoc = 666;
+	};
+	2AFC3EA9108C42E20005EFAB /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */;
 		name = "TestPerson.m: 40";

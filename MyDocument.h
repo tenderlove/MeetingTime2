@@ -11,5 +11,9 @@
 
 @interface MyDocument : NSDocument
 {
+  NSMutableArray *people;
 }
+
+@property (readwrite, copy) NSMutableArray *people;
+
 @end
