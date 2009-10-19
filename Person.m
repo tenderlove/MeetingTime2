@@ -11,35 +11,14 @@
 
 @implementation Person
 
+@synthesize name;
+@synthesize hourlyRate;
+
 - (Person *)initWithName:(NSString *)theName
 {
   [super init];
   [self setName:theName];
   return self;
-}
-
-- (NSNumber *)hourlyRate
-{
-  return hourlyRate;
-}
-
-- (void)setHourlyRate:(NSNumber *)theRate
-{
-  [theRate retain];
-  [hourlyRate release];
-  hourlyRate = theRate;
-}
-
-- (NSString *)name
-{
-  return name;
-}
-
-- (void)setName:(NSString *)theName
-{
-  [theName retain];
-  [name release];
-  name = theName;
 }
 
 @end

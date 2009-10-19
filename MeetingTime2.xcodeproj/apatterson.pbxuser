@@ -66,6 +66,7 @@
 			2AFC3E68108C40310005EFAB /* PBXTextBookmark */ = 2AFC3E68108C40310005EFAB /* PBXTextBookmark */;
 			2AFC3E71108C40370005EFAB /* PBXTextBookmark */ = 2AFC3E71108C40370005EFAB /* PBXTextBookmark */;
 			2AFC3E72108C40460005EFAB /* PBXTextBookmark */ = 2AFC3E72108C40460005EFAB /* PBXTextBookmark */;
+			2AFC3E81108C40B80005EFAB /* PBXTextBookmark */ = 2AFC3E81108C40B80005EFAB /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2AFC3E3E108C3F410005EFAB /* Source Control */;
 		userBuildSettings = {
@@ -117,8 +118,8 @@
 	};
 	2AFC3E4A108C3FA90005EFAB /* Person.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {542, 585}}";
-			sepNavSelRange = "{0, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {542, 325}}";
+			sepNavSelRange = "{342, 0}";
 			sepNavVisRange = "{0, 142}";
 		};
 	};
@@ -181,6 +182,16 @@
 		name = "Person.m: 1";
 		rLen = 0;
 		rLoc = 0;
+		rType = 0;
+		vrLen = 142;
+		vrLoc = 0;
+	};
+	2AFC3E81108C40B80005EFAB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */;
+		name = "Person.m: 25";
+		rLen = 0;
+		rLoc = 342;
 		rType = 0;
 		vrLen = 142;
 		vrLoc = 0;

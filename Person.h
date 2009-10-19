@@ -14,10 +14,9 @@
   NSNumber *hourlyRate;
 }
 
+@property (readwrite, copy) NSString *name;
+@property (readwrite, copy) NSNumber *hourlyRate;
+
 - (Person *)initWithName:(NSString *)theName;
-- (NSNumber *)hourlyRate;
-- (void)setHourlyRate:(NSNumber *)theRate;
-- (NSString *)name;
-- (void)setName:(NSString *)theName;
 
 @end
