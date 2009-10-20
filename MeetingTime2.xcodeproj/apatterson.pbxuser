@@ -3,7 +3,7 @@
 	2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 2AFC3E2B108C3F3E0005EFAB /* MeetingTime2 */;
-		activeTarget = 8D15AC270486D014006FF6A4 /* MeetingTime2 */;
+		activeTarget = 2AFC3E55108C3FCF0005EFAB /* Test */;
 		addToTargets = (
 			2AFC3E55108C3FCF0005EFAB /* Test */,
 		);
@@ -66,6 +66,9 @@
 			2AC075E4108D3CD600E736AA /* PBXTextBookmark */ = 2AC075E4108D3CD600E736AA /* PBXTextBookmark */;
 			2AC075E5108D3CD600E736AA /* PBXTextBookmark */ = 2AC075E5108D3CD600E736AA /* PBXTextBookmark */;
 			2AC075EA108D3CED00E736AA /* PBXTextBookmark */ = 2AC075EA108D3CED00E736AA /* PBXTextBookmark */;
+			2AC07602108D3DB200E736AA /* PBXTextBookmark */ = 2AC07602108D3DB200E736AA /* PBXTextBookmark */;
+			2AC07603108D3DB200E736AA /* PBXTextBookmark */ = 2AC07603108D3DB200E736AA /* PBXTextBookmark */;
+			2AC07624108D43A400E736AA /* PBXTextBookmark */ = 2AC07624108D43A400E736AA /* PBXTextBookmark */;
 			2AFC3E92108C41E50005EFAB = 2AFC3E92108C41E50005EFAB /* PBXTextBookmark */;
 			2AFC3EAD108C43330005EFAB = 2AFC3EAD108C43330005EFAB /* PBXTextBookmark */;
 			2AFC3EB0108CD4AD0005EFAB = 2AFC3EB0108CD4AD0005EFAB /* PBXTextBookmark */;
@@ -134,6 +137,36 @@
 		vrLen = 235;
 		vrLoc = 0;
 	};
+	2AC07602108D3DB200E736AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5D108C400C0005EFAB /* TestPerson.h */;
+		name = "TestPerson.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 235;
+		vrLoc = 0;
+	};
+	2AC07603108D3DB200E736AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5D108C400C0005EFAB /* TestPerson.h */;
+		name = "TestPerson.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 235;
+		vrLoc = 0;
+	};
+	2AC07624108D43A400E736AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5D108C400C0005EFAB /* TestPerson.h */;
+		name = "TestPerson.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 235;
+		vrLoc = 0;
+	};
 	2AFC3E2B108C3F3E0005EFAB /* MeetingTime2 */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -190,7 +223,7 @@
 	};
 	2AFC3E5D108C400C0005EFAB /* TestPerson.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {542, 270}}";
+			sepNavIntBoundsRect = "{{0, 0}, {757, 221}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 235}";
 		};

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* MyDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
+		2AC075EE108D3D3500E736AA /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075ED108D3D3500E736AA /* Meeting.m */; };
+		2AC075FC108D3D7200E736AA /* TestMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075FB108D3D7200E736AA /* TestMeeting.m */; };
+		2AC075FF108D3D9A00E736AA /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075ED108D3D3500E736AA /* Meeting.m */; };
 		2AFC3E4B108C3FA90005EFAB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */; };
 		2AFC3E5F108C400C0005EFAB /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */; };
 		2AFC3E60108C40160005EFAB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */; };
@@ -42,6 +45,10 @@
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2AC075EC108D3D3500E736AA /* Meeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meeting.h; sourceTree = "<group>"; };
+		2AC075ED108D3D3500E736AA /* Meeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meeting.m; sourceTree = "<group>"; };
+		2AC075FA108D3D7200E736AA /* TestMeeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMeeting.h; sourceTree = "<group>"; };
+		2AC075FB108D3D7200E736AA /* TestMeeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMeeting.m; sourceTree = "<group>"; };
 		2AFC3E49108C3FA90005EFAB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		2AFC3E4A108C3FA90005EFAB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		2AFC3E56108C3FCF0005EFAB /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +110,7 @@
 			children = (
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2AC075F9108D3D4F00E736AA /* Tests */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
@@ -118,6 +126,8 @@
 				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
 				2AFC3E49108C3FA90005EFAB /* Person.h */,
 				2AFC3E4A108C3FA90005EFAB /* Person.m */,
+				2AC075EC108D3D3500E736AA /* Meeting.h */,
+				2AC075ED108D3D3500E736AA /* Meeting.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -127,8 +137,6 @@
 			children = (
 				2564AD2C0F5327BB00F57823 /* MeetingTime2_Prefix.pch */,
 				2A37F4B0FDCFA73011CA2CEA /* main.m */,
-				2AFC3E5D108C400C0005EFAB /* TestPerson.h */,
-				2AFC3E5E108C400C0005EFAB /* TestPerson.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -152,6 +160,17 @@
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AC075F9108D3D4F00E736AA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2AFC3E5D108C400C0005EFAB /* TestPerson.h */,
+				2AFC3E5E108C400C0005EFAB /* TestPerson.m */,
+				2AC075FA108D3D7200E736AA /* TestMeeting.h */,
+				2AC075FB108D3D7200E736AA /* TestMeeting.m */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC075FF108D3D9A00E736AA /* Meeting.m in Sources */,
 				2AFC3E60108C40160005EFAB /* Person.m in Sources */,
 				2AFC3E5F108C400C0005EFAB /* TestPerson.m in Sources */,
+				2AC075FC108D3D7200E736AA /* TestMeeting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +287,7 @@
 				8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				2AFC3E4B108C3FA90005EFAB /* Person.m in Sources */,
+				2AC075EE108D3D3500E736AA /* Meeting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
