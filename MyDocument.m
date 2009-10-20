@@ -7,6 +7,7 @@
 //
 
 #import "MyDocument.h"
+#import "Meeting.h"
 
 @implementation MyDocument
 
@@ -16,7 +17,8 @@
 {
   self = [super init];
   if (self) {
-    people = [[NSMutableArray alloc] init];
+    meeting = [[Meeting alloc] init];
+    people = [meeting people];
   }
   return self;
 }

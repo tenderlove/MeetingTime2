@@ -38,9 +38,8 @@
   Meeting * m = [[Meeting alloc] init];
   [m setStartDate:d];
 
-  NSUInteger count = [d retainCount];
   [m release];
-  STAssertEquals(count - 1, [d retainCount],
+  STAssertEquals((NSUInteger)1, [d retainCount],
       @"retain count should be decremented");
 }
 

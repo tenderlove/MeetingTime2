@@ -45,6 +45,11 @@
   [people removeObjectAtIndex:i];
 }
 
+- (NSUInteger)count
+{
+  return [people count];
+}
+
 - (NSTimeInterval)runningInteval
 {
   NSDate * ending = [self stopDate] ? [self stopDate] : [NSDate date];

@@ -26,6 +26,7 @@
 {
   [super init];
   [self setName:theName];
+  [self setHourlyRate:[NSNumber numberWithInt:60]];
   return self;
 }
 

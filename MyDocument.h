@@ -9,9 +9,12 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class Meeting;
+
 @interface MyDocument : NSDocument
 {
   NSMutableArray *people;
+  Meeting *meeting;
 }
 
 @property (readwrite, copy) NSMutableArray *people;

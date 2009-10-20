@@ -3,7 +3,7 @@
 	2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 2AFC3E2B108C3F3E0005EFAB /* MeetingTime2 */;
-		activeTarget = 2AFC3E55108C3FCF0005EFAB /* Test */;
+		activeTarget = 8D15AC270486D014006FF6A4 /* MeetingTime2 */;
 		addToTargets = (
 			2AFC3E55108C3FCF0005EFAB /* Test */,
 		);
@@ -17,7 +17,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					364,
+					579,
 					20,
 					48,
 					43,
@@ -56,19 +56,22 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 277689877;
-			PBXWorkspaceStateSaveDate = 277689877;
+			PBXPerProjectTemplateStateSaveDate = 277693916;
+			PBXWorkspaceStateSaveDate = 277693916;
 		};
 		perUserProjectItems = {
-			2AC075D0108D37D000E736AA /* PBXTextBookmark */ = 2AC075D0108D37D000E736AA /* PBXTextBookmark */;
-			2AC075D1108D37D100E736AA /* PBXTextBookmark */ = 2AC075D1108D37D100E736AA /* PBXTextBookmark */;
-			2AC075E3108D3CD600E736AA /* PBXTextBookmark */ = 2AC075E3108D3CD600E736AA /* PBXTextBookmark */;
-			2AC075E4108D3CD600E736AA /* PBXTextBookmark */ = 2AC075E4108D3CD600E736AA /* PBXTextBookmark */;
-			2AC075E5108D3CD600E736AA /* PBXTextBookmark */ = 2AC075E5108D3CD600E736AA /* PBXTextBookmark */;
-			2AC075EA108D3CED00E736AA /* PBXTextBookmark */ = 2AC075EA108D3CED00E736AA /* PBXTextBookmark */;
-			2AC07602108D3DB200E736AA /* PBXTextBookmark */ = 2AC07602108D3DB200E736AA /* PBXTextBookmark */;
-			2AC07603108D3DB200E736AA /* PBXTextBookmark */ = 2AC07603108D3DB200E736AA /* PBXTextBookmark */;
-			2AC07624108D43A400E736AA /* PBXTextBookmark */ = 2AC07624108D43A400E736AA /* PBXTextBookmark */;
+			2AC075D0108D37D000E736AA = 2AC075D0108D37D000E736AA /* PBXTextBookmark */;
+			2AC075D1108D37D100E736AA = 2AC075D1108D37D100E736AA /* PBXTextBookmark */;
+			2AC075E3108D3CD600E736AA = 2AC075E3108D3CD600E736AA /* PBXTextBookmark */;
+			2AC075E4108D3CD600E736AA = 2AC075E4108D3CD600E736AA /* PBXTextBookmark */;
+			2AC075E5108D3CD600E736AA = 2AC075E5108D3CD600E736AA /* PBXTextBookmark */;
+			2AC075EA108D3CED00E736AA = 2AC075EA108D3CED00E736AA /* PBXTextBookmark */;
+			2AC07602108D3DB200E736AA = 2AC07602108D3DB200E736AA /* PBXTextBookmark */;
+			2AC07603108D3DB200E736AA = 2AC07603108D3DB200E736AA /* PBXTextBookmark */;
+			2AC07624108D43A400E736AA = 2AC07624108D43A400E736AA /* PBXTextBookmark */;
+			2AC07633108D452300E736AA = 2AC07633108D452300E736AA /* PBXTextBookmark */;
+			2AC07634108D452300E736AA = 2AC07634108D452300E736AA /* PBXTextBookmark */;
+			2AC07635108D452300E736AA = 2AC07635108D452300E736AA /* PBXTextBookmark */;
 			2AFC3E92108C41E50005EFAB = 2AFC3E92108C41E50005EFAB /* PBXTextBookmark */;
 			2AFC3EAD108C43330005EFAB = 2AFC3EAD108C43330005EFAB /* PBXTextBookmark */;
 			2AFC3EB0108CD4AD0005EFAB = 2AFC3EB0108CD4AD0005EFAB /* PBXTextBookmark */;
@@ -137,6 +140,13 @@
 		vrLen = 235;
 		vrLoc = 0;
 	};
+	2AC075EC108D3D3500E736AA /* Meeting.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {757, 442}}";
+			sepNavSelRange = "{650, 0}";
+			sepNavVisRange = "{291, 359}";
+		};
+	};
 	2AC07602108D3DB200E736AA /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 2AFC3E5D108C400C0005EFAB /* TestPerson.h */;
@@ -166,6 +176,34 @@
 		rType = 0;
 		vrLen = 235;
 		vrLoc = 0;
+	};
+	2AC07633108D452300E736AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5D108C400C0005EFAB /* TestPerson.h */;
+		name = "TestPerson.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 235;
+		vrLoc = 0;
+	};
+	2AC07634108D452300E736AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "No 'assign', 'retain', or 'copy' attribute is specified - 'assign' is assumed";
+		fRef = 2AC075EC108D3D3500E736AA /* Meeting.h */;
+		rLen = 1;
+		rLoc = 24;
+		rType = 1;
+	};
+	2AC07635108D452300E736AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AC075EC108D3D3500E736AA /* Meeting.h */;
+		name = "Meeting.h: 34";
+		rLen = 0;
+		rLoc = 650;
+		rType = 0;
+		vrLen = 359;
+		vrLoc = 291;
 	};
 	2AFC3E2B108C3F3E0005EFAB /* MeetingTime2 */ = {
 		isa = PBXExecutable;

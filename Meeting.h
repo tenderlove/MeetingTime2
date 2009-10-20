@@ -16,13 +16,14 @@
   NSDate * stopDate;
 }
 
+- (NSUInteger)count;
 - (id)objectAtIndex:(int)i;
 - (void)insertObject:(Person *)p atIndex:(int)i;
 - (void)removeObjectAtIndex:(int)i;
 
 @property (readwrite, copy) NSDate * startDate;
 @property (readwrite, copy) NSDate * stopDate;
-@property (readwrite, copy) NSMutableArray * people;
+@property (assign) NSMutableArray * people;
 
 - (void)start;
 - (void)stop;
