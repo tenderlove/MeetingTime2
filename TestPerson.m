@@ -19,6 +19,14 @@
   [me release];
 }
 
+- (void)testDefaultInit
+{
+  Person *me = [[Person alloc] init];
+  STAssertEqualObjects(@"Someone", [me name], @"name should be Someone");
+  STAssertEqualObjects([NSNumber numberWithInt:60], [me hourlyRate], @"hourly rate should be awesome");
+  [me release];
+}
+
 - (void)testSetName
 {
   Person * me = [[Person alloc] initWithName:@"Aaron"];

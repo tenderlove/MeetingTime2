@@ -14,6 +14,14 @@
 @synthesize name;
 @synthesize hourlyRate;
 
+- (id)init
+{
+  [super init];
+  [self initWithName:@"Someone"];
+  [self setHourlyRate:[NSNumber numberWithInt:60]];
+  return self;
+}
+
 - (Person *)initWithName:(NSString *)theName
 {
   [super init];

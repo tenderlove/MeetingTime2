@@ -62,6 +62,10 @@
 		perUserProjectItems = {
 			2AC075D0108D37D000E736AA /* PBXTextBookmark */ = 2AC075D0108D37D000E736AA /* PBXTextBookmark */;
 			2AC075D1108D37D100E736AA /* PBXTextBookmark */ = 2AC075D1108D37D100E736AA /* PBXTextBookmark */;
+			2AC075E3108D3CD600E736AA /* PBXTextBookmark */ = 2AC075E3108D3CD600E736AA /* PBXTextBookmark */;
+			2AC075E4108D3CD600E736AA /* PBXTextBookmark */ = 2AC075E4108D3CD600E736AA /* PBXTextBookmark */;
+			2AC075E5108D3CD600E736AA /* PBXTextBookmark */ = 2AC075E5108D3CD600E736AA /* PBXTextBookmark */;
+			2AC075EA108D3CED00E736AA /* PBXTextBookmark */ = 2AC075EA108D3CED00E736AA /* PBXTextBookmark */;
 			2AFC3E92108C41E50005EFAB = 2AFC3E92108C41E50005EFAB /* PBXTextBookmark */;
 			2AFC3EAD108C43330005EFAB = 2AFC3EAD108C43330005EFAB /* PBXTextBookmark */;
 			2AFC3EB0108CD4AD0005EFAB = 2AFC3EB0108CD4AD0005EFAB /* PBXTextBookmark */;
@@ -89,6 +93,46 @@
 		rType = 0;
 		vrLen = 174;
 		vrLoc = 666;
+	};
+	2AC075E3108D3CD600E736AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */;
+		name = "TestPerson.m: 40";
+		rLen = 0;
+		rLoc = 845;
+		rType = 0;
+		vrLen = 600;
+		vrLoc = 245;
+	};
+	2AC075E4108D3CD600E736AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5D108C400C0005EFAB /* TestPerson.h */;
+		name = "TestPerson.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 235;
+		vrLoc = 0;
+	};
+	2AC075E5108D3CD600E736AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5D108C400C0005EFAB /* TestPerson.h */;
+		name = "TestPerson.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 83;
+		vrLoc = 0;
+	};
+	2AC075EA108D3CED00E736AA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AFC3E5D108C400C0005EFAB /* TestPerson.h */;
+		name = "TestPerson.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 235;
+		vrLoc = 0;
 	};
 	2AFC3E2B108C3F3E0005EFAB /* MeetingTime2 */ = {
 		isa = PBXExecutable;
@@ -144,11 +188,18 @@
 	2AFC3E55108C3FCF0005EFAB /* Test */ = {
 		activeExec = 0;
 	};
+	2AFC3E5D108C400C0005EFAB /* TestPerson.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {542, 270}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 235}";
+		};
+	};
 	2AFC3E5E108C400C0005EFAB /* TestPerson.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {542, 507}}";
+			sepNavIntBoundsRect = "{{0, 0}, {542, 520}}";
 			sepNavSelRange = "{845, 0}";
-			sepNavVisRange = "{666, 174}";
+			sepNavVisRange = "{245, 600}";
 		};
 	};
 	2AFC3E92108C41E50005EFAB /* PBXTextBookmark */ = {
