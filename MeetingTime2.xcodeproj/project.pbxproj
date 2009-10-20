@@ -24,7 +24,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D15AC270486D014006FF6A4 /* MeetingTime2 */;
+			remoteGlobalIDString = 8D15AC270486D014006FF6A4;
 			remoteInfo = MeetingTime2;
 		};
 /* End PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		2AFC3E49108C3FA90005EFAB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		2AFC3E4A108C3FA90005EFAB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		2AFC3E56108C3FCF0005EFAB /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Test.octest; path = build/Debug/Test.octest; sourceTree = "<group>"; };
+		2AFC3E56108C3FCF0005EFAB /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFC3E57108C3FCF0005EFAB /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
 		2AFC3E5D108C400C0005EFAB /* TestPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPerson.h; sourceTree = "<group>"; };
 		2AFC3E5E108C400C0005EFAB /* TestPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPerson.m; sourceTree = "<group>"; };

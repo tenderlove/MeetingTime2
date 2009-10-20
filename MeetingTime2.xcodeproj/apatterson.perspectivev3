@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>ActivePerspectiveName</key>
-	<string>Debug</string>
+	<string>Project</string>
 	<key>AllowedModules</key>
 	<array>
 		<dict>
@@ -288,19 +288,19 @@
 								<string>2A37F4AAFDCFA73011CA2CEA</string>
 								<string>2A37F4ABFDCFA73011CA2CEA</string>
 								<string>2A37F4AFFDCFA73011CA2CEA</string>
+								<string>2A37F4B8FDCFA73011CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>2AFC3E66108C40310005EFAB</string>
-								<string>2AFC3E67108C40310005EFAB</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
 									<integer>15</integer>
+									<integer>11</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 114}, {185, 428}}</string>
+							<string>{{0, 0}, {185, 428}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -316,6 +316,8 @@
 							<string>MainColumn</string>
 							<real>185</real>
 						</array>
+						<key>RubberWindowFrame</key>
+						<string>119 289 810 487 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -343,11 +345,11 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2AFC3EA9108C42E20005EFAB</string>
+										<string>2AC075D1108D37D100E736AA</string>
 										<key>history</key>
 										<array>
 											<string>2AFC3E92108C41E50005EFAB</string>
-											<string>2AFC3E93108C41E50005EFAB</string>
+											<string>2AC075D0108D37D000E736AA</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -361,16 +363,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {603, 132}}</string>
+								<string>{{0, 0}, {603, 117}}</string>
+								<key>RubberWindowFrame</key>
+								<string>119 289 810 487 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>132pt</string>
+							<string>117pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>309pt</string>
+							<string>324pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -384,7 +388,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {603, 282}}</string>
+										<string>{{10, 27}, {603, 297}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -438,7 +442,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {603, 282}}</string>
+										<string>{{10, 27}, {603, 297}}</string>
+										<key>RubberWindowFrame</key>
+										<string>119 289 810 487 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -466,11 +472,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2AFC3E3A108C3F410005EFAB</string>
+				<string>2AC075D2108D37D100E736AA</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>2AFC3E3B108C3F410005EFAB</string>
+				<string>2AC075D3108D37D100E736AA</string>
 				<string>2AFC3E38108C3F410005EFAB</string>
-				<string>2AFC3E3C108C3F410005EFAB</string>
+				<string>2AC075D4108D37D100E736AA</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -511,8 +517,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
@@ -524,8 +528,6 @@
 					<dict>
 						<key>Frame</key>
 						<string>{{0, 0}, {810, 132}}</string>
-						<key>RubberWindowFrame</key>
-						<string>119 289 810 487 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -600,11 +602,7 @@
 							</array>
 							<key>Frame</key>
 							<string>{{395, 0}, {415, 150}}</string>
-							<key>RubberWindowFrame</key>
-							<string>119 289 810 487 0 0 1280 778 </string>
 						</dict>
-						<key>RubberWindowFrame</key>
-						<string>119 289 810 487 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -627,14 +625,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2AFC3E69108C40310005EFAB</string>
+				<string>2AC075D5108D37D100E736AA</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>2AFC3E6A108C40310005EFAB</string>
-				<string>2AFC3E6B108C40310005EFAB</string>
-				<string>2AFC3E6C108C40310005EFAB</string>
-				<string>2AFC3E6D108C40310005EFAB</string>
-				<string>2AFC3E38108C3F410005EFAB</string>
+				<string>2AC075D6108D37D100E736AA</string>
+				<string>2AC075D7108D37D100E736AA</string>
+				<string>2AC075D8108D37D100E736AA</string>
+				<string>2AC075D9108D37D100E736AA</string>
+				<string>2AC075DA108D37D100E736AA</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -651,7 +649,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>277627618.02271199</real>
+	<real>277690321.38633901</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -668,9 +666,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>2AFC3EAA108C42E20005EFAB</string>
-		<string>2AFC3E6F108C40310005EFAB</string>
-		<string>2AFC3E70108C40310005EFAB</string>
+		<string>2AC075DB108D37D100E736AA</string>
+		<string>2AC075DC108D37D100E736AA</string>
+		<string>2AC075DD108D37D100E736AA</string>
 		<string>/Users/apatterson/git/MeetingTime2/MeetingTime2.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
