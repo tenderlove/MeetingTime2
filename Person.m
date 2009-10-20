@@ -16,17 +16,24 @@
 
 - (id)init
 {
-  [super init];
-  [self initWithName:@"Someone"];
-  [self setHourlyRate:[NSNumber numberWithInt:60]];
+  self = [super init];
+
+  if(self) {
+    [self initWithName:@"Someone"];
+    [self setHourlyRate:[NSNumber numberWithInt:60]];
+  }
   return self;
 }
 
 - (Person *)initWithName:(NSString *)theName
 {
-  [super init];
-  [self setName:theName];
-  [self setHourlyRate:[NSNumber numberWithInt:60]];
+  self = [super init];
+
+  if(self) {
+    [self setName:theName];
+    [self setHourlyRate:[NSNumber numberWithInt:60]];
+  }
+
   return self;
 }
 
