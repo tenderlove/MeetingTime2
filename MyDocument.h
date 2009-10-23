@@ -15,8 +15,21 @@
 {
   NSMutableArray *people;
   Meeting *meeting;
+
+  IBOutlet NSButton * startButton;
+  IBOutlet NSButton * stopButton;
+
+  IBOutlet NSTextField * startTime;
+  IBOutlet NSTextField * endTime;
+  IBOutlet NSTextField * runningTime;
+  IBOutlet NSTextField * totalCost;
+
+  NSTimer * timer;
 }
 
 @property (readwrite, copy) NSMutableArray *people;
+
+- (IBAction)startButtonPressed:(id)sender;
+- (IBAction)stopButtonPressed:(id)sender;
 
 @end
