@@ -19,10 +19,9 @@
   IBOutlet NSButton * startButton;
   IBOutlet NSButton * stopButton;
 
-  IBOutlet NSTextField * startTime;
-  IBOutlet NSTextField * endTime;
   IBOutlet NSTextField * runningTime;
   IBOutlet NSTextField * totalCost;
+  IBOutlet NSTextField * hourlyCost;
 
   NSTimer * timer;
 }

@@ -29,6 +29,7 @@
 - (void)stop;
 - (void)reset;
 - (NSNumber *)cost;
+- (NSNumber *)totalHourlyCost;
 - (NSTimeInterval)runningInteval;
 
 @end

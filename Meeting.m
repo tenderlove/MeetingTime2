@@ -60,15 +60,21 @@
 
 - (NSNumber *)cost
 {
-  if(nil == [self startDate]) return [NSNumber numberWithInt:0];
+  if(nil == [self startDate]) return [NSNumber numberWithFloat:0.0];
 
+  float totalHourly = [[self totalHourlyCost] floatValue];
+  float spent = [self runningInteval] * totalHourly / 3600.0;
+
+  return [NSNumber numberWithFloat:spent];
+}
+
+- (NSNumber *)totalHourlyCost
+{
   float totalHourly = 0;
   for(Person * person in [self people]) {
     totalHourly += [[person hourlyRate] floatValue];
   }
-
-  float spent = [self runningInteval] * totalHourly / 3600.0;
-  return [NSNumber numberWithFloat:spent];
+  return [NSNumber numberWithFloat:totalHourly];
 }
 
 - (void)start

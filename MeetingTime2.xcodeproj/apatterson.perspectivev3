@@ -250,8 +250,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -290,14 +288,15 @@
 								<string>2A37F4AAFDCFA73011CA2CEA</string>
 								<string>2A37F4ABFDCFA73011CA2CEA</string>
 								<string>2A37F4AFFDCFA73011CA2CEA</string>
+								<string>2AC075F9108D3D4F00E736AA</string>
 								<string>2A37F4B8FDCFA73011CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>20</integer>
 									<integer>16</integer>
-									<integer>12</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -319,7 +318,7 @@
 							<real>185</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>128 114 1025 664 0 0 1280 778 </string>
+						<string>21 114 1025 664 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -335,7 +334,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>2AFC3E38108C3F410005EFAB</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Meeting.h</string>
+								<string>Meeting.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -343,11 +342,19 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>2AFC3E39108C3F410005EFAB</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Meeting.h</string>
+										<string>Meeting.m</string>
+										<key>_historyCapacity</key>
+										<integer>0</integer>
+										<key>bookmark</key>
+										<string>2A0D40A81092840A00D04A69</string>
 										<key>history</key>
 										<array>
 											<string>2AFC3E92108C41E50005EFAB</string>
 											<string>2AC075E3108D3CD600E736AA</string>
+											<string>2A0D408E10927EB200D04A69</string>
+											<string>2A0D409A1092811A00D04A69</string>
+											<string>2A0D409B1092811A00D04A69</string>
+											<string>2A0D409C1092811A00D04A69</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -361,18 +368,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {818, 204}}</string>
+								<string>{{0, 0}, {818, 222}}</string>
 								<key>RubberWindowFrame</key>
-								<string>128 114 1025 664 0 0 1280 778 </string>
+								<string>21 114 1025 664 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>204pt</string>
+							<string>222pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>414pt</string>
+							<string>396pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -387,8 +394,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {818, 387}}</string>
-										<key>RubberWindowFrame</key>
-										<string>128 114 1025 664 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -442,7 +447,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {818, 373}}</string>
+										<string>{{10, 27}, {818, 369}}</string>
+										<key>RubberWindowFrame</key>
+										<string>21 114 1025 664 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -623,14 +630,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>2AC07661108D45E200E736AA</string>
+				<string>2A0D405F10927BAD00D04A69</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>2AC07662108D45E200E736AA</string>
-				<string>2AC07663108D45E200E736AA</string>
-				<string>2AC07664108D45E200E736AA</string>
-				<string>2AC07665108D45E200E736AA</string>
-				<string>2AC07666108D45E200E736AA</string>
+				<string>2A0D406010927BAD00D04A69</string>
+				<string>2A0D406110927BAD00D04A69</string>
+				<string>2A0D406210927BAD00D04A69</string>
+				<string>2A0D406310927BAD00D04A69</string>
+				<string>2AFC3E38108C3F410005EFAB</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -647,7 +654,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>278033655.46267802</real>
+	<real>278037514.48393798</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -664,10 +671,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>2A0D406410927BAD00D04A69</string>
+		<string>2A0D406510927BAD00D04A69</string>
 		<string>/Users/apatterson/git/MeetingTime2/MeetingTime2.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>128 114 1025 664 0 0 1280 778 </string>
+	<string>21 114 1025 664 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

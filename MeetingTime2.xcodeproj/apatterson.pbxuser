@@ -1,5 +1,61 @@
 // !$*UTF8*$!
 {
+	2A0D408710927E1900D04A69 /* TestMeeting.mi */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.objc.preprocessed;
+		name = TestMeeting.mi;
+		path = "/Users/apatterson/git/MeetingTime2/build/MeetingTime2.build/Debug/Test.build/Objects-normal/x86_64/TestMeeting.mi";
+		sourceTree = "<absolute>";
+	};
+	2A0D408E10927EB200D04A69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2A0D408710927E1900D04A69 /* TestMeeting.mi */;
+		name = "TestMeeting.mi: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 8060;
+		vrLoc = 3466386;
+	};
+	2A0D409A1092811A00D04A69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AC075FB108D3D7200E736AA /* TestMeeting.m */;
+		name = "TestMeeting.m: 88";
+		rLen = 0;
+		rLoc = 2059;
+		rType = 0;
+		vrLen = 392;
+		vrLoc = 988;
+	};
+	2A0D409B1092811A00D04A69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AC075FA108D3D7200E736AA /* TestMeeting.h */;
+		name = "TestMeeting.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 237;
+		vrLoc = 0;
+	};
+	2A0D409C1092811A00D04A69 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Potential leak of an object allocated on line 26";
+		fRef = 2AC075ED108D3D3500E736AA /* Meeting.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 30;
+		rType = 1;
+	};
+	2A0D40A81092840A00D04A69 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2AC075ED108D3D3500E736AA /* Meeting.m */;
+		name = "Meeting.m: 105";
+		rLen = 0;
+		rLoc = 1904;
+		rType = 0;
+		vrLen = 365;
+		vrLoc = 417;
+	};
 	2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 2AFC3E2B108C3F3E0005EFAB /* MeetingTime2 */;
@@ -60,8 +116,13 @@
 			PBXWorkspaceStateSaveDate = 278033653;
 		};
 		perUserProjectItems = {
-			2AC075E3108D3CD600E736AA = 2AC075E3108D3CD600E736AA /* PBXTextBookmark */;
-			2AFC3E92108C41E50005EFAB = 2AFC3E92108C41E50005EFAB /* PBXTextBookmark */;
+			2A0D408E10927EB200D04A69 /* PBXTextBookmark */ = 2A0D408E10927EB200D04A69 /* PBXTextBookmark */;
+			2A0D409A1092811A00D04A69 /* PBXTextBookmark */ = 2A0D409A1092811A00D04A69 /* PBXTextBookmark */;
+			2A0D409B1092811A00D04A69 /* PBXTextBookmark */ = 2A0D409B1092811A00D04A69 /* PBXTextBookmark */;
+			2A0D409C1092811A00D04A69 /* XCBuildMessageTextBookmark */ = 2A0D409C1092811A00D04A69 /* XCBuildMessageTextBookmark */;
+			2A0D40A81092840A00D04A69 /* PBXTextBookmark */ = 2A0D40A81092840A00D04A69 /* PBXTextBookmark */;
+			2AC075E3108D3CD600E736AA /* PBXTextBookmark */ = 2AC075E3108D3CD600E736AA /* PBXTextBookmark */;
+			2AFC3E92108C41E50005EFAB /* PBXTextBookmark */ = 2AFC3E92108C41E50005EFAB /* PBXTextBookmark */;
 		};
 		sourceControlManager = 2AFC3E3E108C3F410005EFAB /* Source Control */;
 		userBuildSettings = {
@@ -82,6 +143,27 @@
 			sepNavIntBoundsRect = "{{0, 0}, {757, 442}}";
 			sepNavSelRange = "{650, 0}";
 			sepNavVisRange = "{291, 359}";
+		};
+	};
+	2AC075ED108D3D3500E736AA /* Meeting.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {757, 1378}}";
+			sepNavSelRange = "{1904, 0}";
+			sepNavVisRange = "{417, 365}";
+		};
+	};
+	2AC075FA108D3D7200E736AA /* TestMeeting.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {757, 221}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 237}";
+		};
+	};
+	2AC075FB108D3D7200E736AA /* TestMeeting.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {757, 1170}}";
+			sepNavSelRange = "{2059, 0}";
+			sepNavVisRange = "{988, 392}";
 		};
 	};
 	2AFC3E2B108C3F3E0005EFAB /* MeetingTime2 */ = {

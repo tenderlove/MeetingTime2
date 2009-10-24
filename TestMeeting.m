@@ -72,10 +72,8 @@
 - (void)testCostStarted
 {
   Meeting * m = [[Meeting alloc] init];
-  NSNumber * zero = [[NSNumber numberWithInt:0] retain];
-
   [m start];
-  STAssertEqualObjects(zero, [m cost], @"cost should be 0");
+  STAssertEqualsWithAccuracy(0.0f, [[m cost] floatValue], 0.001, @"cost should be 0, instead %@", [m cost]);
 }
 
 - (void)testReset
