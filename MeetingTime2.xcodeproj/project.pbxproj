@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* MyDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
+		2A52EB691096896D0035A24D /* TestMyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EB681096896D0035A24D /* TestMyDocument.m */; };
+		2A52EB6A1096898A0035A24D /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; };
+		2A52EB9F109692350035A24D /* MyDocument_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EB9E109692350035A24D /* MyDocument_Private.m */; };
 		2AC075EE108D3D3500E736AA /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075ED108D3D3500E736AA /* Meeting.m */; };
 		2AC075FC108D3D7200E736AA /* TestMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075FB108D3D7200E736AA /* TestMeeting.m */; };
 		2AC075FF108D3D9A00E736AA /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075ED108D3D3500E736AA /* Meeting.m */; };
@@ -45,6 +48,10 @@
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2A52EB671096896D0035A24D /* TestMyDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMyDocument.h; sourceTree = "<group>"; };
+		2A52EB681096896D0035A24D /* TestMyDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMyDocument.m; sourceTree = "<group>"; };
+		2A52EB9B109691500035A24D /* MyDocument_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDocument_Private.h; sourceTree = "<group>"; };
+		2A52EB9E109692350035A24D /* MyDocument_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDocument_Private.m; sourceTree = "<group>"; };
 		2AC075EC108D3D3500E736AA /* Meeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meeting.h; sourceTree = "<group>"; };
 		2AC075ED108D3D3500E736AA /* Meeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meeting.m; sourceTree = "<group>"; };
 		2AC075FA108D3D7200E736AA /* TestMeeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMeeting.h; sourceTree = "<group>"; };
@@ -165,7 +172,11 @@
 		2AC075F9108D3D4F00E736AA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2A52EB9B109691500035A24D /* MyDocument_Private.h */,
+				2A52EB9E109692350035A24D /* MyDocument_Private.m */,
 				2AFC3E5D108C400C0005EFAB /* TestPerson.h */,
+				2A52EB671096896D0035A24D /* TestMyDocument.h */,
+				2A52EB681096896D0035A24D /* TestMyDocument.m */,
 				2AFC3E5E108C400C0005EFAB /* TestPerson.m */,
 				2AC075FA108D3D7200E736AA /* TestMeeting.h */,
 				2AC075FB108D3D7200E736AA /* TestMeeting.m */,
@@ -274,9 +285,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AC075FF108D3D9A00E736AA /* Meeting.m in Sources */,
+				2A52EB6A1096898A0035A24D /* MyDocument.m in Sources */,
 				2AFC3E60108C40160005EFAB /* Person.m in Sources */,
 				2AFC3E5F108C400C0005EFAB /* TestPerson.m in Sources */,
 				2AC075FC108D3D7200E736AA /* TestMeeting.m in Sources */,
+				2A52EB691096896D0035A24D /* TestMyDocument.m in Sources */,
+				2A52EB9F109692350035A24D /* MyDocument_Private.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
