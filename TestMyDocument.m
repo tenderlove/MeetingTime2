@@ -10,15 +10,42 @@
 
 
 @implementation TestMyDocument
-- (void)setUp {
+- (void)setUp
+{
   _myDocument = [[MyDocument alloc] init];
   [_myDocument makeWindowControllers];
-  _window = [[_myDocument windowControllers] objectAtIndex:0];
+  windowController = [[_myDocument windowControllers] objectAtIndex:0];
+  window = [windowController window];
 }
 
-- (void)tearDown {
+- (void)tearDown
+{
   [_myDocument release];
-  _window = nil;
+  window = nil;
+}
+
+- (void)testWindowLoaded
+{
+  [windowController loadWindow];
+  STAssertTrue([windowController isWindowLoaded], @"window should be loaded");
+}
+
+- (void)testOwner
+{
+  MyDocument * owner = [windowController owner];
+  STAssertEqualObjects(_myDocument, owner, @"document should be", owner);
+}
+
+- (void)testNibName
+{
+  NSString * name = [windowController windowNibName];
+  STAssertEqualObjects(@"MyDocument", name, @"nib name was %@", name);
+}
+
+- (void)testWindowControllerLength
+{
+  STAssertEquals((NSUInteger)1, [[_myDocument windowControllers] count],
+      @"oh noes!");
 }
 
 - (void)testStartButton
@@ -33,6 +60,6 @@
 }
 
 - (void)testWindowLoading {
-  STAssertNotNil(_window, @"The window should be connected");
+  STAssertNotNil(window, @"The window should be connected");
 }
 @end

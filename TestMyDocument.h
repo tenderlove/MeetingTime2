@@ -13,7 +13,8 @@
 
 @interface TestMyDocument : SenTestCase {
   MyDocument * _myDocument;
-  NSWindow * _window;
+  NSWindowController * windowController;
+  NSWindow * window;
 }
 
 @end
