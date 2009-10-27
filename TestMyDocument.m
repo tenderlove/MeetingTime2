@@ -21,6 +21,11 @@
   _window = nil;
 }
 
+- (void)testStartButton
+{
+  STAssertNotNil([_myDocument _startButton], @"zomg should have button");
+}
+
 - (void)testPeople
 {
   NSMutableArray * people = [_myDocument _people];

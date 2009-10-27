@@ -9,6 +9,12 @@
 #import "MyDocument.h"
 
 @implementation MyDocument (MyDocument_Private)
+
+- (NSButton *)_startButton
+{
+  return startButton;
+}
+
 - (NSMutableArray *)_people
 {
   return people;
