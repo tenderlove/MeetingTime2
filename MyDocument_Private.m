@@ -14,9 +14,4 @@
 {
   return startButton;
 }
-
-- (NSMutableArray *)_people
-{
-  return people;
-}
 @end

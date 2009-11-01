@@ -9,15 +9,13 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* MyDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
-		2A52EB691096896D0035A24D /* TestMyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EB681096896D0035A24D /* TestMyDocument.m */; };
-		2A52EB6A1096898A0035A24D /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; };
-		2A52EB9F109692350035A24D /* MyDocument_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EB9E109692350035A24D /* MyDocument_Private.m */; };
+		2A2EED7A1097B3EC00B87E90 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2EED791097B3EC00B87E90 /* SenTestingKit.framework */; };
+		2A2EED861097B41000B87E90 /* TestMyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EB681096896D0035A24D /* TestMyDocument.m */; };
+		2A2EED871097B41000B87E90 /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */; };
+		2A2EED891097B41000B87E90 /* TestMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075FB108D3D7200E736AA /* TestMeeting.m */; };
 		2AC075EE108D3D3500E736AA /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075ED108D3D3500E736AA /* Meeting.m */; };
-		2AC075FC108D3D7200E736AA /* TestMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075FB108D3D7200E736AA /* TestMeeting.m */; };
-		2AC075FF108D3D9A00E736AA /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075ED108D3D3500E736AA /* Meeting.m */; };
+		2ADCE3C6109E3604006803EC /* MyDocument_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EB9E109692350035A24D /* MyDocument_Private.m */; };
 		2AFC3E4B108C3FA90005EFAB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */; };
-		2AFC3E5F108C400C0005EFAB /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */; };
-		2AFC3E60108C40160005EFAB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
@@ -26,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2AFC3E5B108C3FE60005EFAB /* PBXContainerItemProxy */ = {
+		2A2EED7D1097B3F000B87E90 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
 			proxyType = 1;
@@ -42,6 +40,14 @@
 		1DDD58290DA1D0D100B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MyDocument.xib; sourceTree = "<group>"; };
 		1DDD582B0DA1D0D100B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2564AD2C0F5327BB00F57823 /* MeetingTime2_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingTime2_Prefix.pch; sourceTree = "<group>"; };
+		2A2EECFE1097B15600B87E90 /* Unit Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unit Tests-Info.plist"; sourceTree = "<group>"; };
+		2A2EED031097B15600B87E90 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
+		2A2EED101097B17200B87E90 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
+		2A2EED2A1097B19800B87E90 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
+		2A2EED3C1097B26700B87E90 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
+		2A2EED4B1097B27B00B87E90 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
+		2A2EED741097B3EC00B87E90 /* Unit Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2EED791097B3EC00B87E90 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
 		2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
 		2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
 		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,8 +64,6 @@
 		2AC075FB108D3D7200E736AA /* TestMeeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMeeting.m; sourceTree = "<group>"; };
 		2AFC3E49108C3FA90005EFAB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		2AFC3E4A108C3FA90005EFAB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		2AFC3E56108C3FCF0005EFAB /* Test.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AFC3E57108C3FCF0005EFAB /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
 		2AFC3E5D108C400C0005EFAB /* TestPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPerson.h; sourceTree = "<group>"; };
 		2AFC3E5E108C400C0005EFAB /* TestPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPerson.m; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* MeetingTime2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MeetingTime2-Info.plist"; sourceTree = "<group>"; };
@@ -67,10 +71,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2AFC3E53108C3FCF0005EFAB /* Frameworks */ = {
+		2A2EED711097B3EC00B87E90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2EED7A1097B3EC00B87E90 /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +94,12 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+				2A2EED031097B15600B87E90 /* SenTestingKit.framework */,
+				2A2EED101097B17200B87E90 /* SenTestingKit.framework */,
+				2A2EED2A1097B19800B87E90 /* SenTestingKit.framework */,
+				2A2EED3C1097B26700B87E90 /* SenTestingKit.framework */,
+				2A2EED4B1097B27B00B87E90 /* SenTestingKit.framework */,
+				2A2EED791097B3EC00B87E90 /* SenTestingKit.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -107,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				8D15AC370486D014006FF6A4 /* MeetingTime2.app */,
-				2AFC3E56108C3FCF0005EFAB /* Test.octest */,
+				2A2EED741097B3EC00B87E90 /* Unit Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,7 +132,7 @@
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
-				2AFC3E57108C3FCF0005EFAB /* Test-Info.plist */,
+				2A2EECFE1097B15600B87E90 /* Unit Tests-Info.plist */,
 			);
 			name = MeetingTime2;
 			sourceTree = "<group>";
@@ -187,23 +198,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2AFC3E55108C3FCF0005EFAB /* Test */ = {
+		2A2EED731097B3EC00B87E90 /* Unit Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AFC3E5A108C3FCF0005EFAB /* Build configuration list for PBXNativeTarget "Test" */;
+			buildConfigurationList = 2A2EED781097B3EC00B87E90 /* Build configuration list for PBXNativeTarget "Unit Tests" */;
 			buildPhases = (
-				2AFC3E51108C3FCF0005EFAB /* Resources */,
-				2AFC3E52108C3FCF0005EFAB /* Sources */,
-				2AFC3E53108C3FCF0005EFAB /* Frameworks */,
-				2AFC3E54108C3FCF0005EFAB /* ShellScript */,
+				2A2EED6F1097B3EC00B87E90 /* Resources */,
+				2A2EED701097B3EC00B87E90 /* Sources */,
+				2A2EED711097B3EC00B87E90 /* Frameworks */,
+				2A2EED721097B3EC00B87E90 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2AFC3E5C108C3FE60005EFAB /* PBXTargetDependency */,
+				2A2EED7E1097B3F000B87E90 /* PBXTargetDependency */,
 			);
-			name = Test;
-			productName = Test;
-			productReference = 2AFC3E56108C3FCF0005EFAB /* Test.octest */;
+			name = "Unit Tests";
+			productName = "Unit Tests";
+			productReference = 2A2EED741097B3EC00B87E90 /* Unit Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 		8D15AC270486D014006FF6A4 /* MeetingTime2 */ = {
@@ -237,13 +248,13 @@
 			projectRoot = "";
 			targets = (
 				8D15AC270486D014006FF6A4 /* MeetingTime2 */,
-				2AFC3E55108C3FCF0005EFAB /* Test */,
+				2A2EED731097B3EC00B87E90 /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2AFC3E51108C3FCF0005EFAB /* Resources */ = {
+		2A2EED6F1097B3EC00B87E90 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -264,7 +275,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2AFC3E54108C3FCF0005EFAB /* ShellScript */ = {
+		2A2EED721097B3EC00B87E90 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,17 +291,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2AFC3E52108C3FCF0005EFAB /* Sources */ = {
+		2A2EED701097B3EC00B87E90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC075FF108D3D9A00E736AA /* Meeting.m in Sources */,
-				2A52EB6A1096898A0035A24D /* MyDocument.m in Sources */,
-				2AFC3E60108C40160005EFAB /* Person.m in Sources */,
-				2AFC3E5F108C400C0005EFAB /* TestPerson.m in Sources */,
-				2AC075FC108D3D7200E736AA /* TestMeeting.m in Sources */,
-				2A52EB691096896D0035A24D /* TestMyDocument.m in Sources */,
-				2A52EB9F109692350035A24D /* MyDocument_Private.m in Sources */,
+				2A2EED861097B41000B87E90 /* TestMyDocument.m in Sources */,
+				2ADCE3C6109E3604006803EC /* MyDocument_Private.m in Sources */,
+				2A2EED871097B41000B87E90 /* TestPerson.m in Sources */,
+				2A2EED891097B41000B87E90 /* TestMeeting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,10 +316,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2AFC3E5C108C3FE60005EFAB /* PBXTargetDependency */ = {
+		2A2EED7E1097B3F000B87E90 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8D15AC270486D014006FF6A4 /* MeetingTime2 */;
-			targetProxy = 2AFC3E5B108C3FE60005EFAB /* PBXContainerItemProxy */;
+			targetProxy = 2A2EED7D1097B3F000B87E90 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -351,10 +359,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2AFC3E58108C3FCF0005EFAB /* Debug */ = {
+		2A2EED751097B3EC00B87E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MeetingTime2.app/Contents/MacOS/MeetingTime2";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -364,7 +373,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "Test-Info.plist";
+				INFOPLIST_FILE = "Unit Tests-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -373,12 +382,13 @@
 					SenTestingKit,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = Test;
+				PRODUCT_NAME = "Unit Tests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		2AFC3E59108C3FCF0005EFAB /* Release */ = {
+		2A2EED761097B3EC00B87E90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -390,7 +400,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
-				INFOPLIST_FILE = "Test-Info.plist";
+				INFOPLIST_FILE = "Unit Tests-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -399,7 +409,7 @@
 					SenTestingKit,
 				);
 				PREBINDING = NO;
-				PRODUCT_NAME = Test;
+				PRODUCT_NAME = "Unit Tests";
 				WRAPPER_EXTENSION = octest;
 				ZERO_LINK = NO;
 			};
@@ -465,11 +475,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2AFC3E5A108C3FCF0005EFAB /* Build configuration list for PBXNativeTarget "Test" */ = {
+		2A2EED781097B3EC00B87E90 /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2AFC3E58108C3FCF0005EFAB /* Debug */,
-				2AFC3E59108C3FCF0005EFAB /* Release */,
+				2A2EED751097B3EC00B87E90 /* Debug */,
+				2A2EED761097B3EC00B87E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

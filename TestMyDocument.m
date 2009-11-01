@@ -7,6 +7,7 @@
 //
 
 #import "TestMyDocument.h"
+#import "MyDocument_Private.h"
 
 
 @implementation TestMyDocument
@@ -14,8 +15,7 @@
 {
   _myDocument = [[MyDocument alloc] init];
   [_myDocument makeWindowControllers];
-  windowController = [[_myDocument windowControllers] objectAtIndex:0];
-  window = [windowController window];
+  window = [_myDocument windowForSheet];
 }
 
 - (void)tearDown
@@ -24,21 +24,9 @@
   window = nil;
 }
 
-- (void)testWindowLoaded
-{
-  [windowController loadWindow];
-  STAssertTrue([windowController isWindowLoaded], @"window should be loaded");
-}
-
-- (void)testOwner
-{
-  MyDocument * owner = [windowController owner];
-  STAssertEqualObjects(_myDocument, owner, @"document should be", owner);
-}
-
 - (void)testNibName
 {
-  NSString * name = [windowController windowNibName];
+  NSString * name = [_myDocument windowNibName];
   STAssertEqualObjects(@"MyDocument", name, @"nib name was %@", name);
 }
 
@@ -55,7 +43,7 @@
 
 - (void)testPeople
 {
-  NSMutableArray * people = [_myDocument _people];
+  NSMutableArray * people = [_myDocument people];
   STAssertNotNil(people, @"People list should not be empty");
 }
 

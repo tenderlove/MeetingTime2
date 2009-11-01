@@ -11,7 +11,6 @@
 @interface MyDocument (MyDocument_Private)
 
 
-- (NSMutableArray *)_people;
 - (NSButton *)_startButton;
 
 @end
