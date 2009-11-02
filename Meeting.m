@@ -30,6 +30,20 @@
   return self;
 }
 
+- (void)encodeWithCoder:(NSCoder *)coder
+{
+  [coder encodeObject:people forKey:@"people"];
+}
+
+- (id)initWithCoder:(NSCoder *)coder
+{
+  self = [super init];
+  if(self) {
+    [self setPeople:[coder decodeObjectForKey:@"people"]];
+  }
+  return self;
+}
+
 - (id)objectAtIndex:(int)i
 {
   return [people objectAtIndex:i];

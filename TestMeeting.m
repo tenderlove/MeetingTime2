@@ -85,4 +85,24 @@
   STAssertNil([m startDate], @"startDate should be nil");
 }
 
+- (void)testCoder
+{
+  NSMutableData * data = [[NSMutableData alloc] init];
+
+  Meeting * m = [[Meeting alloc] init];
+
+  NSKeyedArchiver * writer = [[NSKeyedArchiver alloc]
+    initForWritingWithMutableData:data];
+
+  [m encodeWithCoder:writer];
+  [writer finishEncoding];
+
+  NSCoder * reader = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+
+  Meeting * copy = [[Meeting alloc] initWithCoder:reader];
+
+  STAssertEquals([[m people] count], [[copy people] count],
+      @"people count should equal %@", [[m people] count]);
+}
+
 @end

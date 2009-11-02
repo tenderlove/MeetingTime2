@@ -30,5 +30,7 @@
 - (void)reset;
 - (NSNumber *)cost;
 - (NSTimeInterval)runningInteval;
+- (void)encodeWithCoder:(NSCoder *)coder;
+- (id)initWithCoder:(NSCoder *)coder;
 
 @end
