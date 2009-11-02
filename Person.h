@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface Person : NSObject {
+@interface Person : NSObject <NSCoding> {
   NSString *name;
   NSNumber *hourlyRate;
 }
@@ -18,5 +18,7 @@
 @property (readwrite, copy) NSNumber *hourlyRate;
 
 - (Person *)initWithName:(NSString *)theName;
+- (void)encodeWithCoder:(NSCoder *)coder;
+- (id)initWithCoder:(NSCoder *)coder;
 
 @end

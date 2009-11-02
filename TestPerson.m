@@ -12,6 +12,27 @@
 
 @implementation TestPerson
 
+- (void)testCoder
+{
+  NSMutableData * data = [[NSMutableData alloc] init];
+
+  Person * me = [[Person alloc] initWithName:@"Aaron"];
+  NSKeyedArchiver * writer = [[NSKeyedArchiver alloc]
+    initForWritingWithMutableData:data];
+
+  [me encodeWithCoder:writer];
+  [writer finishEncoding];
+
+  NSCoder * reader = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+
+  Person * copy = [[Person alloc] initWithCoder:reader];
+
+  STAssertEqualObjects([me name], [copy name], @"name should equal %@",
+      [me name]);
+  STAssertEqualObjects([me hourlyRate], [copy hourlyRate],
+      @"rate should equal %@", [me hourlyRate]);
+}
+
 - (void)testInitWithName
 {
   Person * me = [[Person alloc] initWithName:@"Aaron"];

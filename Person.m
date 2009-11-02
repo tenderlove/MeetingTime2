@@ -37,6 +37,22 @@
   return self;
 }
 
+- (void)encodeWithCoder:(NSCoder *)coder
+{
+  [coder encodeObject:name forKey:@"name"];
+  [coder encodeObject:hourlyRate forKey:@"hourlyRate"];
+}
+
+- (id)initWithCoder:(NSCoder *)coder
+{
+  self = [super init];
+  if(self) {
+    [self setName:[coder decodeObjectForKey:@"name"]];
+    [self setHourlyRate:[coder decodeObjectForKey:@"hourlyRate"]];
+  }
+  return self;
+}
+
 - (void)dealloc
 {
   [self setName:nil];
