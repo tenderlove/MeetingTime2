@@ -30,17 +30,26 @@
 
 - (void)testColorWell
 {
-  STAssertNotNil([preferenceController _colorWell], @"has colorWell");
+  NSColorWell * colorWell = [preferenceController _colorWell];
+  STAssertNotNil(colorWell, @"has colorWell");
+  STAssertEquals([colorWell action], @selector(changeBackgroundColor:),
+                 @"Should set the -changeBackgroundColor: action");
 }
 
 - (void)testDefaultRate
 {
-  STAssertNotNil([preferenceController _defaultRate], @"has defaultRate");
+  NSTextField * defaultRate = [preferenceController _defaultRate];
+  STAssertNotNil(defaultRate, @"has defaultRate");
+  STAssertEquals([defaultRate action], @selector(changeDefaultRate:),
+                 @"Should set the -changeDefaultRate: action");
 }
 
 - (void)testDefaultName
 {
-  STAssertNotNil([preferenceController _defaultName], @"has defaultName");
+  NSTextField * defaultName = [preferenceController _defaultName];
+  STAssertNotNil(defaultName, @"has defaultName");
+  STAssertEquals([defaultName action], @selector(changeDefaultName:),
+                 @"Should set the -changeDefaultName: action");
 }
 
 
