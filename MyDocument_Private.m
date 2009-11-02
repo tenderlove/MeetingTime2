@@ -14,4 +14,9 @@
 {
   return startButton;
 }
+
+- (NSTableView *)_tableView
+{
+  return tableView;
+}
 @end

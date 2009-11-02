@@ -12,5 +12,6 @@
 
 
 - (NSButton *)_startButton;
+- (NSTableView *)_tableView;
 
 @end

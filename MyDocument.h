@@ -22,6 +22,7 @@
   IBOutlet NSTextField * runningTime;
   IBOutlet NSTextField * totalCost;
   IBOutlet NSTextField * hourlyCost;
+  IBOutlet NSTableView * tableView;
 
   NSTimer * timer;
 }

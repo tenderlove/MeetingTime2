@@ -69,12 +69,12 @@
   [super windowControllerDidLoadNib:aController];
 }
 
-- (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
+- (NSData *)dataOfType:(NSString *)typeName
+                 error:(NSError **)outError
 {
-  if ( outError != NULL ) {
-    *outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
-  }
-  return nil;
+  [[tableView window] endEditingFor:nil];
+
+  return [NSKeyedArchiver archivedDataWithRootObject:people];
 }
 
 - (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError

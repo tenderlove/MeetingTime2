@@ -13,37 +13,48 @@
 @implementation TestMyDocument
 - (void)setUp
 {
-  _myDocument = [[MyDocument alloc] init];
-  [_myDocument makeWindowControllers];
-  window = [_myDocument windowForSheet];
+  myDocument = [[MyDocument alloc] init];
+  [myDocument makeWindowControllers];
+  window = [myDocument windowForSheet];
 }
 
 - (void)tearDown
 {
-  [_myDocument release];
+  [myDocument release];
   window = nil;
+}
+
+- (void)testArchive
+{
+  NSData * data = [myDocument dataOfType:@"whatevs" error:nil];
+  STAssertNotNil(data, @"data should not be nil");
+}
+
+- (void)testTableView
+{
+  STAssertNotNil([myDocument _tableView], @"should have table view");
 }
 
 - (void)testNibName
 {
-  NSString * name = [_myDocument windowNibName];
+  NSString * name = [myDocument windowNibName];
   STAssertEqualObjects(@"MyDocument", name, @"nib name was %@", name);
 }
 
 - (void)testWindowControllerLength
 {
-  STAssertEquals((NSUInteger)1, [[_myDocument windowControllers] count],
+  STAssertEquals((NSUInteger)1, [[myDocument windowControllers] count],
       @"oh noes!");
 }
 
 - (void)testStartButton
 {
-  STAssertNotNil([_myDocument _startButton], @"zomg should have button");
+  STAssertNotNil([myDocument _startButton], @"zomg should have button");
 }
 
 - (void)testPeople
 {
-  NSMutableArray * people = [_myDocument people];
+  NSMutableArray * people = [myDocument people];
   STAssertNotNil(people, @"People list should not be empty");
 }
 
