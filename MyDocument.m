@@ -92,7 +92,16 @@
 
 - (void)removeObjectFromPeopleAtIndex:(int)index
 {
+  Person *p = [people objectAtIndex:index];
   [people removeObjectAtIndex:index];
+
+  NSUndoManager * undo = [self undoManager];
+  [[undo prepareWithInvocationTarget:self] insertObject:p
+                     inPeopleAtIndex:index];
+
+  if(![undo isUndoing]) {
+    [undo setActionName:@"Delete Person"];
+  }
 }
 
 - (BOOL)readFromData:(NSData *)data

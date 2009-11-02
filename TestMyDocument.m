@@ -65,6 +65,25 @@
   STAssertEquals(before + 1, [[myDocument person] count]);
 
   NSUndoManager * undo = [myDocument undoManager];
+  STAssertEquals(@"Insert Person", [undo actionName], @"action name was %@",
+      [undo actionName]);
+
+  [undo undo];
+  STAssertEquals(before, [[myDocument person] count]);
+}
+
+- (void)testUndoRemove
+{
+  Person * me = [[Person alloc] initWithName:@"Aaron"];
+  NSUInteger before = [[myDocument people] count];
+
+  [myDocument removeObjectFromPeopleAtIndex:0];
+  STAssertEquals(before - 1, [[myDocument person] count]);
+
+  NSUndoManager * undo = [myDocument undoManager];
+  STAssertEquals(@"Delete Person", [undo actionName], @"action name was %@",
+      [undo actionName]);
+
   [undo undo];
   STAssertEquals(before, [[myDocument person] count]);
 }
