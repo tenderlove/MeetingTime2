@@ -77,11 +77,13 @@
   return [NSKeyedArchiver archivedDataWithRootObject:people];
 }
 
-- (BOOL)readFromData:(NSData *)data ofType:(NSString *)typeName error:(NSError **)outError
+- (BOOL)readFromData:(NSData *)data
+              ofType:(NSString *)typeName
+               error:(NSError **)outError
 {
-  if ( outError != NULL ) {
-    *outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
-  }
+  NSMutableArray * newList = nil;
+  newList = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+  [self setPeople:newList];
   return YES;
 }
 

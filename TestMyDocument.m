@@ -30,6 +30,21 @@
   STAssertNotNil(data, @"data should not be nil");
 }
 
+- (void)testUnarchive
+{
+  NSData * data = [myDocument dataOfType:@"whatevs" error:nil];
+  NSUInteger before = [[myDocument people] count];
+
+  [myDocument setPeople:[[NSArray alloc] init]];
+  STAssertEquals((NSUInteger)0,
+      [[myDocument people] count], @"count should be 0");
+  BOOL ret = [myDocument readFromData:data
+                               ofType:@"whateves"
+                                error:nil];
+  STAssertTrue(ret, @"ret should be true");
+  STAssertEquals(before, [[myDocument people] count], @"count should be 4");
+}
+
 - (void)testTableView
 {
   STAssertNotNil([myDocument _tableView], @"should have table view");
