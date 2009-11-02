@@ -13,6 +13,9 @@
 		2A2EED861097B41000B87E90 /* TestMyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EB681096896D0035A24D /* TestMyDocument.m */; };
 		2A2EED871097B41000B87E90 /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */; };
 		2A2EED891097B41000B87E90 /* TestMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075FB108D3D7200E736AA /* TestMeeting.m */; };
+		2AAF8AD2109EA5EA003AF52C /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF8AD1109EA5EA003AF52C /* AppController.m */; };
+		2AAF8AD8109EA712003AF52C /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF8AD7109EA712003AF52C /* PreferenceController.m */; };
+		2AAF8ADC109EA7D0003AF52C /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF8ADB109EA7D0003AF52C /* Preferences.xib */; };
 		2AC075EE108D3D3500E736AA /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075ED108D3D3500E736AA /* Meeting.m */; };
 		2ADCE3C6109E3604006803EC /* MyDocument_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EB9E109692350035A24D /* MyDocument_Private.m */; };
 		2AFC3E4B108C3FA90005EFAB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */; };
@@ -58,6 +61,11 @@
 		2A52EB681096896D0035A24D /* TestMyDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMyDocument.m; sourceTree = "<group>"; };
 		2A52EB9B109691500035A24D /* MyDocument_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDocument_Private.h; sourceTree = "<group>"; };
 		2A52EB9E109692350035A24D /* MyDocument_Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDocument_Private.m; sourceTree = "<group>"; };
+		2AAF8AD0109EA5EA003AF52C /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		2AAF8AD1109EA5EA003AF52C /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		2AAF8AD6109EA712003AF52C /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
+		2AAF8AD7109EA712003AF52C /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		2AAF8ADB109EA7D0003AF52C /* Preferences.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
 		2AC075EC108D3D3500E736AA /* Meeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meeting.h; sourceTree = "<group>"; };
 		2AC075ED108D3D3500E736AA /* Meeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meeting.m; sourceTree = "<group>"; };
 		2AC075FA108D3D7200E736AA /* TestMeeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMeeting.h; sourceTree = "<group>"; };
@@ -126,6 +134,8 @@
 		2A37F4AAFDCFA73011CA2CEA /* MeetingTime2 */ = {
 			isa = PBXGroup;
 			children = (
+				2AAF8AD0109EA5EA003AF52C /* AppController.h */,
+				2AAF8AD1109EA5EA003AF52C /* AppController.m */,
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 				2AC075F9108D3D4F00E736AA /* Tests */,
@@ -167,6 +177,9 @@
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
 				1DDD58280DA1D0D100B32029 /* MyDocument.xib */,
 				1DDD582A0DA1D0D100B32029 /* MainMenu.xib */,
+				2AAF8ADB109EA7D0003AF52C /* Preferences.xib */,
+				2AAF8AD6109EA712003AF52C /* PreferenceController.h */,
+				2AAF8AD7109EA712003AF52C /* PreferenceController.m */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -258,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AAF8ADC109EA7D0003AF52C /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +313,8 @@
 				2ADCE3C6109E3604006803EC /* MyDocument_Private.m in Sources */,
 				2A2EED871097B41000B87E90 /* TestPerson.m in Sources */,
 				2A2EED891097B41000B87E90 /* TestMeeting.m in Sources */,
+				2AAF8AD2109EA5EA003AF52C /* AppController.m in Sources */,
+				2AAF8AD8109EA712003AF52C /* PreferenceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
