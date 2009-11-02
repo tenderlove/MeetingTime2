@@ -59,21 +59,6 @@
   [timer invalidate];
 }
 
-- (void)insertObject:(Person *)p inPeopleAtIndex:(int)index
-{
-  NSLog(@"adding %@ to %@", p, people);
-  [people insertObject:p atIndex:index];
-  [hourlyCost setFloatValue:[[meeting totalHourlyCost] floatValue]];
-}
-
-- (void)removeObjectFromPeopleAtIndex:(int)index
-{
-  Person *p = [people objectAtIndex:index];
-  NSLog(@"removing %@ from %@", p, people);
-  [people removeObjectAtIndex:index];
-  [hourlyCost setFloatValue:[[meeting totalHourlyCost] floatValue]];
-}
-
 - (NSString *)windowNibName
 {
   return @"MyDocument";
@@ -82,7 +67,6 @@
 - (void)windowControllerDidLoadNib:(NSWindowController *) aController
 {
   [super windowControllerDidLoadNib:aController];
-  [hourlyCost setFloatValue:[[meeting totalHourlyCost] floatValue]];
 }
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError
