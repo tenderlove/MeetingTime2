@@ -77,6 +77,24 @@
   return [NSKeyedArchiver archivedDataWithRootObject:people];
 }
 
+- (void)insertObject:(Person *)p inPeopleAtIndex:(int)index
+{
+  [people insertObject:p atIndex:index];
+  NSUndoManager * undo = [self undoManager];
+
+  [[undo prepareWithInvocationTarget:self]
+       removeObjectFromPeopleAtIndex:index];
+
+  if(![undo isUndoing]) {
+    [undo setActionName:@"Insert Person"];
+  }
+}
+
+- (void)removeObjectFromPeopleAtIndex:(int)index
+{
+  [people removeObjectAtIndex:index];
+}
+
 - (BOOL)readFromData:(NSData *)data
               ofType:(NSString *)typeName
                error:(NSError **)outError

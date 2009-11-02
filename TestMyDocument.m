@@ -57,6 +57,18 @@
 }
 */
 
+- (void)testUndoInsert
+{
+  Person * me = [[Person alloc] initWithName:@"Aaron"];
+  NSUInteger before = [[myDocument people] count];
+  [myDocument insertObject:me inPeopleAtIndex:0];
+  STAssertEquals(before + 1, [[myDocument person] count]);
+
+  NSUndoManager * undo = [myDocument undoManager];
+  [undo undo];
+  STAssertEquals(before, [[myDocument person] count]);
+}
+
 - (void)testTableView
 {
   STAssertNotNil([myDocument _tableView], @"should have table view");

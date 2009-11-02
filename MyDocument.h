@@ -10,6 +10,7 @@
 #import <Cocoa/Cocoa.h>
 
 @class Meeting;
+@class Person;
 
 @interface MyDocument : NSDocument
 {
@@ -31,5 +32,7 @@
 
 - (IBAction)startButtonPressed:(id)sender;
 - (IBAction)stopButtonPressed:(id)sender;
+- (void)insertObject:(Person *)p inPeopleAtIndex:(int)index;
+- (void)removeObjectFromPeopleAtIndex:(int)index;
 
 @end
