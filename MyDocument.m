@@ -82,7 +82,21 @@
                error:(NSError **)outError
 {
   NSMutableArray * newList = nil;
-  newList = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+  @try {
+    newList = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+  }
+  @catch (NSException *e) {
+    if(outError) {
+      NSDictionary *d = [NSDictionary
+        dictionaryWithObject:@"The data is corrupted"
+                      forKey:NSLocalizedFailureReasonErrorKey];
+      *outError = [NSError errorWithDomain:NSOSStatusErrorDomain
+                                      code:unimpErr
+                                  userInfo:d];
+    }
+    return NO;
+  }
+
   [self setPeople:newList];
   return YES;
 }

@@ -45,6 +45,18 @@
   STAssertEquals(before, [[myDocument people] count], @"count should be 4");
 }
 
+/* FIXME: how to make this thing pass??
+- (void)testUnarchiveWithError
+{
+  NSError * error = nil;
+  BOOL ret = [myDocument readFromData:[[NSMutableData alloc] init]
+                               ofType:@"whateves"
+                                error:&error];
+  STAssertTrue(!ret, @"ret should be false");
+  STAssertNotNil(error, @"error is not nil");
+}
+*/
+
 - (void)testTableView
 {
   STAssertNotNil([myDocument _tableView], @"should have table view");
