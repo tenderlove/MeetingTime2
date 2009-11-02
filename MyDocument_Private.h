@@ -10,7 +10,6 @@
 
 @interface MyDocument (MyDocument_Private)
 
-
 - (NSButton *)_startButton;
 - (NSTableView *)_tableView;
 

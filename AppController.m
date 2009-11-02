@@ -7,6 +7,7 @@
 //
 
 #import "AppController.h"
+#import "PreferenceController.h"
 
 
 @implementation AppController

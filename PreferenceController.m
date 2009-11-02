@@ -11,4 +11,23 @@
 
 @implementation PreferenceController
 
+- (id)init
+{
+  if(![super initWithWindowNibName:@"Preferences"])
+    return nil;
+  return self;
+}
+
+- (IBAction)changeBackgroundColor:(id)sender
+{
+}
+
+- (IBAction)changeDefaultRate:(id)sender
+{
+}
+
+- (IBAction)changeDefaultName:(id)sender
+{
+}
+
 @end
