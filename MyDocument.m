@@ -18,7 +18,7 @@
   self = [super init];
   if (self) {
     meeting = [[Meeting alloc] init];
-    people = [meeting people];
+    self.people = [meeting people];
   }
   return self;
 }
@@ -79,7 +79,6 @@
 
 - (void)insertObject:(Person *)p inPeopleAtIndex:(int)index
 {
-  [people insertObject:p atIndex:index];
   NSUndoManager * undo = [self undoManager];
 
   [[undo prepareWithInvocationTarget:self]
@@ -88,12 +87,14 @@
   if(![undo isUndoing]) {
     [undo setActionName:@"Insert Person"];
   }
+
+  [self startObservingPerson:p];
+  [people insertObject:p atIndex:index];
 }
 
 - (void)removeObjectFromPeopleAtIndex:(int)index
 {
   Person *p = [people objectAtIndex:index];
-  [people removeObjectAtIndex:index];
 
   NSUndoManager * undo = [self undoManager];
   [[undo prepareWithInvocationTarget:self] insertObject:p
@@ -102,6 +103,8 @@
   if(![undo isUndoing]) {
     [undo setActionName:@"Delete Person"];
   }
+  [self stopObservingPerson:p];
+  [people removeObjectAtIndex:index];
 }
 
 - (BOOL)readFromData:(NSData *)data
@@ -126,6 +129,65 @@
 
   [self setPeople:newList];
   return YES;
+}
+
+- (void)startObservingPerson:(Person *)person
+{
+  [person addObserver:self
+           forKeyPath:@"name"
+              options:NSKeyValueObservingOptionOld
+              context:NULL];
+
+  [person addObserver:self
+           forKeyPath:@"hourlyRate"
+              options:NSKeyValueObservingOptionOld
+              context:NULL];
+}
+
+- (void)stopObservingPerson:(Person *)person
+{
+  [person removeObserver:self forKeyPath:@"name"];
+  [person removeObserver:self forKeyPath:@"hourlyRate"];
+}
+
+- (void)changeKeyPath:(NSString *)keyPath
+             ofObject:(id)obj
+              toValue:(id)newValue
+{
+  [obj setValue:newValue forKeyPath:keyPath];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary *)change
+                       context:(void *)context
+{
+  NSUndoManager * undo = [self undoManager];
+  id oldValue = [change objectForKey:NSKeyValueChangeOldKey];
+
+  if(oldValue == [NSNull null]) oldValue = nil;
+
+  [[undo prepareWithInvocationTarget:self] changeKeyPath:keyPath
+                            ofObject:object
+                             toValue:oldValue];
+  [undo setActionName:@"Edit"];
+}
+
+- (void)setPeople:(NSMutableArray *)thePeople
+{
+  if(people == thePeople) return;
+
+  for (Person *person in people) {
+    [self stopObservingPerson:person];
+  }
+
+  [thePeople retain];
+  [people release];
+  people = thePeople;
+
+  for (Person *person in people) {
+    [self startObservingPerson:person];
+  }
 }
 
 @end

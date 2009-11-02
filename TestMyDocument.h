@@ -9,6 +9,7 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import "MyDocument.h"
 #import "MyDocument_Private.h"
+#import "Person.h"
 
 
 @interface TestMyDocument : SenTestCase {

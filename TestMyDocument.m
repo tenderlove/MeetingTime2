@@ -62,30 +62,48 @@
   Person * me = [[Person alloc] initWithName:@"Aaron"];
   NSUInteger before = [[myDocument people] count];
   [myDocument insertObject:me inPeopleAtIndex:0];
-  STAssertEquals(before + 1, [[myDocument person] count]);
+  STAssertEquals(before + 1, [[myDocument people] count], @"count changed");
 
   NSUndoManager * undo = [myDocument undoManager];
-  STAssertEquals(@"Insert Person", [undo actionName], @"action name was %@",
-      [undo actionName]);
+  STAssertEqualObjects(@"Insert Person", [undo undoActionName],
+      @"action name was %@", [undo undoActionName]);
 
   [undo undo];
-  STAssertEquals(before, [[myDocument person] count]);
+  STAssertEquals(before, [[myDocument people] count], @"count should change");
 }
 
 - (void)testUndoRemove
 {
-  Person * me = [[Person alloc] initWithName:@"Aaron"];
   NSUInteger before = [[myDocument people] count];
 
   [myDocument removeObjectFromPeopleAtIndex:0];
-  STAssertEquals(before - 1, [[myDocument person] count]);
+  STAssertEquals(before - 1, [[myDocument people] count], @"count should change");
 
   NSUndoManager * undo = [myDocument undoManager];
-  STAssertEquals(@"Delete Person", [undo actionName], @"action name was %@",
-      [undo actionName]);
+  STAssertEqualObjects(@"Delete Person", [undo undoActionName],
+      @"action name was %@", [undo undoActionName]);
 
   [undo undo];
-  STAssertEquals(before, [[myDocument person] count]);
+  STAssertEquals(before, [[myDocument people] count], @"count should change");
+}
+
+- (void)testUndoKeyPath
+{
+  Person * first = [[myDocument people] objectAtIndex:0];
+
+  NSString * before = [first name];
+
+  [myDocument changeKeyPath:@"name"
+                   ofObject:first
+                    toValue:@"Hungry"];
+  STAssertEqualObjects(@"Hungry", [first name], @"first name should be Hungry");
+
+  NSUndoManager * undo = [myDocument undoManager];
+  STAssertEqualObjects(@"Edit", [undo undoActionName], @"action name was %@",
+      [undo undoActionName]);
+
+  [undo undo];
+  STAssertEqualObjects(before, [first name], @"name should change");
 }
 
 - (void)testTableView

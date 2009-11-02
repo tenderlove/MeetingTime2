@@ -28,11 +28,17 @@
   NSTimer * timer;
 }
 
-@property (readwrite, copy) NSMutableArray *people;
+@property (readonly) NSMutableArray *people;
 
 - (IBAction)startButtonPressed:(id)sender;
 - (IBAction)stopButtonPressed:(id)sender;
 - (void)insertObject:(Person *)p inPeopleAtIndex:(int)index;
 - (void)removeObjectFromPeopleAtIndex:(int)index;
+- (void)setPeople:(NSMutableArray *)thePeople;
+- (void)stopObservingPerson:(Person *)person;
+- (void)startObservingPerson:(Person *)person;
+- (void)changeKeyPath:(NSString *)keyPath
+             ofObject:(id)obj
+              toValue:(id)newValue;
 
 @end
