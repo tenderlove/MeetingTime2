@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-@class PreferenceController;
+#import "PreferenceController.h"
 
 @interface AppController : NSObject {
   PreferenceController *preferenceController;

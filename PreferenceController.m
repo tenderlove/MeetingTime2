@@ -8,6 +8,9 @@
 
 #import "PreferenceController.h"
 
+NSString * const TLMTableBgColorKey = @"TableBackgroundColor";
+NSString * const TLMPersonNameKey   = @"PersonNameKey";
+NSString * const TLMPersonRateKey   = @"PersonRateKey";
 
 @implementation PreferenceController
 

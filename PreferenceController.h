@@ -8,6 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 
+extern NSString * const TLMTableBgColorKey;
+extern NSString * const TLMPersonNameKey;
+extern NSString * const TLMPersonRateKey;
 
 @interface PreferenceController : NSWindowController {
   IBOutlet NSColorWell *colorWell;
