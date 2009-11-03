@@ -41,6 +41,18 @@
       @"default name should be set from prefs");
 }
 
+- (void)testRateUsesDefault
+{
+  NSNumber * defaultRate = [NSNumber numberWithInt:600];
+
+  STAssertEqualObjects(defaultRate, [preferenceController hourlyRate],
+      @"should return default");
+
+  NSTextField * rate = [preferenceController _defaultRate];
+  STAssertEquals(600, [rate intValue],
+      @"default name should be set from prefs");
+}
+
 - (void)testPreferencesConnected
 {
   NSApplication * app = [NSApplication sharedApplication];

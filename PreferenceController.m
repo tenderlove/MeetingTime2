@@ -46,10 +46,17 @@ NSString * const TLMPersonRateKey   = @"PersonRateKey";
   return [defaults stringForKey:TLMPersonNameKey];
 }
 
+- (NSNumber *)hourlyRate
+{
+  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+  return [defaults objectForKey:TLMPersonRateKey];
+}
+
 - (void)windowDidLoad
 {
   [colorWell setColor:[self tableBgColor]];
   [defaultName setStringValue:[self personName]];
+  [defaultRate setFloatValue:[[self hourlyRate] floatValue]];
 }
 
 @end

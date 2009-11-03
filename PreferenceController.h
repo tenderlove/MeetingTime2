@@ -22,5 +22,6 @@ extern NSString * const TLMPersonRateKey;
 - (IBAction)changeDefaultName:(id)sender;
 - (NSColor *)tableBgColor;
 - (NSString *)personName;
+- (NSNumber *)hourlyRate;
 
 @end
