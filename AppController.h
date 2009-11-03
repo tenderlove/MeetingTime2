@@ -9,6 +9,9 @@
 #import <Cocoa/Cocoa.h>
 #import "PreferenceController.h"
 
+#define DEFAULT_NAME @"Bill"
+#define DEFAULT_RATE 600
+
 @interface AppController : NSObject {
   PreferenceController *preferenceController;
 }

@@ -33,7 +33,7 @@
 
 - (void)testPersonNameUsesDefault
 {
-  STAssertEqualObjects(@"Bill", [preferenceController personName],
+  STAssertEqualObjects(DEFAULT_NAME, [preferenceController personName],
       @"should return default");
   NSTextField * name = [preferenceController _defaultName];
   STAssertEqualObjects([preferenceController personName],
@@ -43,13 +43,13 @@
 
 - (void)testRateUsesDefault
 {
-  NSNumber * defaultRate = [NSNumber numberWithInt:600];
+  NSNumber * defaultRate = [NSNumber numberWithInt:DEFAULT_RATE];
 
   STAssertEqualObjects(defaultRate, [preferenceController hourlyRate],
       @"should return default");
 
   NSTextField * rate = [preferenceController _defaultRate];
-  STAssertEquals(600, [rate intValue],
+  STAssertEquals(DEFAULT_RATE, [rate intValue],
       @"default name should be set from prefs");
 }
 

@@ -30,10 +30,10 @@
       [NSKeyedUnarchiver unarchiveObjectWithData:colorAsData],
       @"Should have bgcolor default");
 
-  STAssertEqualObjects(@"Bill", [defaults stringForKey:TLMPersonNameKey],
+  STAssertEqualObjects(DEFAULT_NAME, [defaults stringForKey:TLMPersonNameKey],
       @"Default name is Bill");
 
-  NSNumber * defaultRate = [NSNumber numberWithInt:600];
+  NSNumber * defaultRate = [NSNumber numberWithInt:DEFAULT_RATE];
 
   STAssertEqualObjects(defaultRate, [defaults objectForKey:TLMPersonRateKey],
       @"Default name is Bill");

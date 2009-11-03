@@ -8,6 +8,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "PreferenceController.h"
+#import "AppController.h"
 
 
 @interface TestPreferenceController : SenTestCase {

@@ -9,7 +9,6 @@
 #import "AppController.h"
 #import "PreferenceController.h"
 
-
 @implementation AppController
 
 +(void)initialize
@@ -19,8 +18,8 @@
     [NSColor yellowColor]];
 
   [defaultValues setObject:colorAsData forKey:TLMTableBgColorKey];
-  [defaultValues setObject:@"Bill" forKey:TLMPersonNameKey];
-  [defaultValues setObject:[NSNumber numberWithInt:600]
+  [defaultValues setObject:DEFAULT_NAME forKey:TLMPersonNameKey];
+  [defaultValues setObject:[NSNumber numberWithInt:DEFAULT_RATE]
                     forKey:TLMPersonRateKey];
 
   [[NSUserDefaults standardUserDefaults] registerDefaults:defaultValues];
