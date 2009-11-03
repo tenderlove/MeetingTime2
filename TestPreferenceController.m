@@ -23,6 +23,22 @@
   window = nil;
 }
 
+- (void)testPreferencesConnected
+{
+  NSApplication * app = [NSApplication sharedApplication];
+  NSMenu * mainMenu = [app mainMenu];
+  STAssertNotNil(mainMenu, @"should have a main menu");
+
+  NSMenuItem * appItem = [mainMenu itemAtIndex:0];
+  STAssertNotNil(appItem, @"should have an app item");
+
+  NSMenu * submenu = [appItem submenu];
+  NSMenuItem * prefs = [submenu itemWithTitle:@"Preferences…"];
+  STAssertNotNil(prefs, @"should have prefs item");
+  STAssertEquals([prefs action], @selector(showPreferencePanel:),
+                 @"Should set the -showPreferencePanel: action");
+}
+
 - (void)testWindow
 {
   STAssertNotNil(window, @"window should not be nil");
