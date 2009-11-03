@@ -23,6 +23,24 @@
   window = nil;
 }
 
+- (void)testColorWellUsesDefault
+{
+  NSColorWell * colorWell = [preferenceController _colorWell];
+
+  STAssertEqualObjects([preferenceController tableBgColor],
+      [colorWell color], @"color well should use defaults");
+}
+
+- (void)testPersonNameUsesDefault
+{
+  STAssertEqualObjects(@"Bill", [preferenceController personName],
+      @"should return default");
+  NSTextField * name = [preferenceController _defaultName];
+  STAssertEqualObjects([preferenceController personName],
+      [name stringValue],
+      @"default name should be set from prefs");
+}
+
 - (void)testPreferencesConnected
 {
   NSApplication * app = [NSApplication sharedApplication];

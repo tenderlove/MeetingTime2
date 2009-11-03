@@ -20,5 +20,7 @@ extern NSString * const TLMPersonRateKey;
 - (IBAction)changeBackgroundColor:(id)sender;
 - (IBAction)changeDefaultRate:(id)sender;
 - (IBAction)changeDefaultName:(id)sender;
+- (NSColor *)tableBgColor;
+- (NSString *)personName;
 
 @end

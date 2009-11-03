@@ -33,4 +33,23 @@ NSString * const TLMPersonRateKey   = @"PersonRateKey";
 {
 }
 
+- (NSColor *)tableBgColor
+{
+  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+  NSData *colorAsData = [defaults objectForKey:TLMTableBgColorKey];
+  return [NSKeyedUnarchiver unarchiveObjectWithData:colorAsData];
+}
+
+- (NSString *)personName
+{
+  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+  return [defaults stringForKey:TLMPersonNameKey];
+}
+
+- (void)windowDidLoad
+{
+  [colorWell setColor:[self tableBgColor]];
+  [defaultName setStringValue:[self personName]];
+}
+
 @end
