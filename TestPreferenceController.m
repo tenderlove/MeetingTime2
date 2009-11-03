@@ -13,6 +13,7 @@
 
 - (void)setUp
 {
+  [NSUserDefaults resetStandardUserDefaults];
   preferenceController = [[PreferenceController alloc] init];
   window = [preferenceController window];
 }
@@ -21,6 +22,11 @@
 {
   [preferenceController release];
   window = nil;
+
+  NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+  [defaults removeObjectForKey:TLMTableBgColorKey];
+  [defaults removeObjectForKey:TLMPersonNameKey];
+  [defaults removeObjectForKey:TLMPersonRateKey];
 }
 
 - (void)testColorWellUsesDefault
@@ -43,6 +49,7 @@
 
 - (void)testRateUsesDefault
 {
+  [NSUserDefaults resetStandardUserDefaults];
   NSNumber * defaultRate = [NSNumber numberWithInt:DEFAULT_RATE];
 
   STAssertEqualObjects(defaultRate, [preferenceController hourlyRate],
@@ -50,7 +57,7 @@
 
   NSTextField * rate = [preferenceController _defaultRate];
   STAssertEquals(DEFAULT_RATE, [rate intValue],
-      @"default name should be set from prefs");
+      @"default rate should be set from prefs");
 }
 
 - (void)testPreferencesConnected
@@ -82,6 +89,17 @@
                  @"Should set the -changeBackgroundColor: action");
 }
 
+- (void)testChangeBackgroundColor
+{
+  NSColor * green = [NSColor greenColor];
+  NSColorWell * colorWell = [preferenceController _colorWell];
+  [colorWell setColor:green];
+
+  [preferenceController changeBackgroundColor:nil];
+  STAssertEqualObjects(green, [preferenceController tableBgColor],
+      @"color should be green");
+}
+
 - (void)testDefaultRate
 {
   NSTextField * defaultRate = [preferenceController _defaultRate];
@@ -90,12 +108,32 @@
                  @"Should set the -changeDefaultRate: action");
 }
 
+- (void)testChangeDefaultRate
+{
+  NSTextField * defaultRate = [preferenceController _defaultRate];
+  [defaultRate setStringValue:@"100"];
+
+  [preferenceController changeDefaultRate:nil];
+  STAssertEqualObjects([NSNumber numberWithInt:100],
+      [preferenceController hourlyRate], @"rate should be 100");
+}
+
 - (void)testDefaultName
 {
   NSTextField * defaultName = [preferenceController _defaultName];
   STAssertNotNil(defaultName, @"has defaultName");
   STAssertEquals([defaultName action], @selector(changeDefaultName:),
                  @"Should set the -changeDefaultName: action");
+}
+
+- (void)testChangeDefaultName
+{
+  NSTextField * defaultName = [preferenceController _defaultName];
+  [defaultName setStringValue:@"Aaron"];
+
+  [preferenceController changeDefaultName:nil];
+  STAssertEqualObjects(@"Aaron",
+      [preferenceController personName], @"name should be Aaron");
 }
 
 

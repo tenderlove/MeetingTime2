@@ -17,6 +17,14 @@
   [NSUserDefaults resetStandardUserDefaults];
 }
 
+- (void)tearDown
+{
+  NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+  [defaults removeObjectForKey:TLMTableBgColorKey];
+  [defaults removeObjectForKey:TLMPersonNameKey];
+  [defaults removeObjectForKey:TLMPersonRateKey];
+}
+
 - (void)testInitializeDefaults
 {
   [AppController initialize];
@@ -36,7 +44,7 @@
   NSNumber * defaultRate = [NSNumber numberWithInt:DEFAULT_RATE];
 
   STAssertEqualObjects(defaultRate, [defaults objectForKey:TLMPersonRateKey],
-      @"Default name is Bill");
+      @"Default rate is set");
 }
 
 @end

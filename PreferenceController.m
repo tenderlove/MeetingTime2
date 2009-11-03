@@ -23,14 +23,24 @@ NSString * const TLMPersonRateKey   = @"PersonRateKey";
 
 - (IBAction)changeBackgroundColor:(id)sender
 {
+  NSColor *color = [colorWell color];
+  NSData *colorAsData = [NSKeyedArchiver archivedDataWithRootObject:color];
+  NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+  [defaults setObject:colorAsData forKey:TLMTableBgColorKey];
 }
 
 - (IBAction)changeDefaultRate:(id)sender
 {
+  NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+  [defaults setObject:
+    [NSNumber numberWithFloat:[defaultRate floatValue]]
+                       forKey:TLMPersonRateKey];
 }
 
 - (IBAction)changeDefaultName:(id)sender
 {
+  NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
+  [defaults setObject:[defaultName stringValue] forKey:TLMPersonNameKey];
 }
 
 - (NSColor *)tableBgColor
