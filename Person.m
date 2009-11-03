@@ -27,11 +27,16 @@
 
 - (Person *)initWithName:(NSString *)theName
 {
+  return [self initWithName:theName hourlyRate:[NSNumber numberWithInt:60]];
+}
+
+- (Person *)initWithName:(NSString *)theName hourlyRate:(NSNumber *)theRate
+{
   self = [super init];
 
   if(self) {
     [self setName:theName];
-    [self setHourlyRate:[NSNumber numberWithInt:60]];
+    [self setHourlyRate:theRate];
   }
 
   return self;

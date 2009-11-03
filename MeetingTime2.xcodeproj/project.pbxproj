@@ -9,16 +9,19 @@
 /* Begin PBXBuildFile section */
 		1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58280DA1D0D100B32029 /* MyDocument.xib */; };
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
+		2A0210F3109FE15B00DF01E5 /* PersonArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0210F2109FE15B00DF01E5 /* PersonArrayController.m */; };
+		2A021124109FE91E00DF01E5 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF8AD7109EA712003AF52C /* PreferenceController.m */; };
+		2A021129109FE94600DF01E5 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF8AD7109EA712003AF52C /* PreferenceController.m */; };
+		2A02112C109FE95900DF01E5 /* PreferenceController_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD396C109EB1D70083E518 /* PreferenceController_Private.m */; };
+		2A02112F109FE97900DF01E5 /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075ED108D3D3500E736AA /* Meeting.m */; };
 		2A2EED7A1097B3EC00B87E90 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2EED791097B3EC00B87E90 /* SenTestingKit.framework */; };
 		2A2EED861097B41000B87E90 /* TestMyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EB681096896D0035A24D /* TestMyDocument.m */; };
 		2A2EED871097B41000B87E90 /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */; };
 		2A2EED891097B41000B87E90 /* TestMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075FB108D3D7200E736AA /* TestMeeting.m */; };
 		2A374B07109FC7B500E4C47B /* TestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A374B06109FC7B500E4C47B /* TestAppController.m */; };
 		2AAF8AD2109EA5EA003AF52C /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF8AD1109EA5EA003AF52C /* AppController.m */; };
-		2AAF8AD8109EA712003AF52C /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF8AD7109EA712003AF52C /* PreferenceController.m */; };
 		2AAF8ADC109EA7D0003AF52C /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF8ADB109EA7D0003AF52C /* Preferences.xib */; };
 		2AAF8AF0109EAAC7003AF52C /* TestPreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF8AEF109EAAC7003AF52C /* TestPreferenceController.m */; };
-		2ABD396D109EB1D70083E518 /* PreferenceController_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD396C109EB1D70083E518 /* PreferenceController_Private.m */; };
 		2AC075EE108D3D3500E736AA /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075ED108D3D3500E736AA /* Meeting.m */; };
 		2ADCE3C6109E3604006803EC /* MyDocument_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EB9E109692350035A24D /* MyDocument_Private.m */; };
 		2AFC3E4B108C3FA90005EFAB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3E4A108C3FA90005EFAB /* Person.m */; };
@@ -46,6 +49,8 @@
 		1DDD58290DA1D0D100B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MyDocument.xib; sourceTree = "<group>"; };
 		1DDD582B0DA1D0D100B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2564AD2C0F5327BB00F57823 /* MeetingTime2_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingTime2_Prefix.pch; sourceTree = "<group>"; };
+		2A0210F1109FE15B00DF01E5 /* PersonArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonArrayController.h; sourceTree = "<group>"; };
+		2A0210F2109FE15B00DF01E5 /* PersonArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonArrayController.m; sourceTree = "<group>"; };
 		2A2EECFE1097B15600B87E90 /* Unit Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unit Tests-Info.plist"; sourceTree = "<group>"; };
 		2A2EED031097B15600B87E90 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
 		2A2EED101097B17200B87E90 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = /Developer/Library/Frameworks/SenTestingKit.framework; sourceTree = "<absolute>"; };
@@ -163,10 +168,12 @@
 				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
 				2AFC3E49108C3FA90005EFAB /* Person.h */,
 				2AFC3E4A108C3FA90005EFAB /* Person.m */,
+				2A0210F1109FE15B00DF01E5 /* PersonArrayController.h */,
+				2A0210F2109FE15B00DF01E5 /* PersonArrayController.m */,
 				2AC075EC108D3D3500E736AA /* Meeting.h */,
 				2AC075ED108D3D3500E736AA /* Meeting.m */,
-				2ABD396B109EB1D70083E518 /* PreferenceController_Private.h */,
-				2ABD396C109EB1D70083E518 /* PreferenceController_Private.m */,
+				2AAF8AD6109EA712003AF52C /* PreferenceController.h */,
+				2AAF8AD7109EA712003AF52C /* PreferenceController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -189,8 +196,6 @@
 				1DDD58280DA1D0D100B32029 /* MyDocument.xib */,
 				1DDD582A0DA1D0D100B32029 /* MainMenu.xib */,
 				2AAF8ADB109EA7D0003AF52C /* Preferences.xib */,
-				2AAF8AD6109EA712003AF52C /* PreferenceController.h */,
-				2AAF8AD7109EA712003AF52C /* PreferenceController.m */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -207,6 +212,8 @@
 		2AC075F9108D3D4F00E736AA /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2ABD396B109EB1D70083E518 /* PreferenceController_Private.h */,
+				2ABD396C109EB1D70083E518 /* PreferenceController_Private.m */,
 				2A374B05109FC7B500E4C47B /* TestAppController.h */,
 				2A374B06109FC7B500E4C47B /* TestAppController.m */,
 				2AAF8AEE109EAAC7003AF52C /* TestPreferenceController.h */,
@@ -329,10 +336,11 @@
 				2A2EED871097B41000B87E90 /* TestPerson.m in Sources */,
 				2A2EED891097B41000B87E90 /* TestMeeting.m in Sources */,
 				2AAF8AD2109EA5EA003AF52C /* AppController.m in Sources */,
-				2AAF8AD8109EA712003AF52C /* PreferenceController.m in Sources */,
 				2AAF8AF0109EAAC7003AF52C /* TestPreferenceController.m in Sources */,
-				2ABD396D109EB1D70083E518 /* PreferenceController_Private.m in Sources */,
 				2A374B07109FC7B500E4C47B /* TestAppController.m in Sources */,
+				2A021129109FE94600DF01E5 /* PreferenceController.m in Sources */,
+				2A02112C109FE95900DF01E5 /* PreferenceController_Private.m in Sources */,
+				2A02112F109FE97900DF01E5 /* Meeting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +352,8 @@
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				2AFC3E4B108C3FA90005EFAB /* Person.m in Sources */,
 				2AC075EE108D3D3500E736AA /* Meeting.m in Sources */,
+				2A0210F3109FE15B00DF01E5 /* PersonArrayController.m in Sources */,
+				2A021124109FE91E00DF01E5 /* PreferenceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

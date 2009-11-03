@@ -18,6 +18,7 @@
 @property (readwrite, copy) NSNumber *hourlyRate;
 
 - (Person *)initWithName:(NSString *)theName;
+- (Person *)initWithName:(NSString *)theName hourlyRate:(NSNumber *)theRate;
 - (void)encodeWithCoder:(NSCoder *)coder;
 - (id)initWithCoder:(NSCoder *)coder;
 
