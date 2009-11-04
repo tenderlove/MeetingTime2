@@ -8,6 +8,7 @@
 
 #import "MyDocument.h"
 #import "Meeting.h"
+#import "PreferenceController.h"
 
 @implementation MyDocument
 
@@ -67,6 +68,11 @@
 - (void)windowControllerDidLoadNib:(NSWindowController *) aController
 {
   [super windowControllerDidLoadNib:aController];
+
+  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+  NSData *colorAsData = [defaults objectForKey:TLMTableBgColorKey];
+  [tableView setBackgroundColor:
+    [NSKeyedUnarchiver unarchiveObjectWithData:colorAsData]];
 }
 
 - (NSData *)dataOfType:(NSString *)typeName
