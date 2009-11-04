@@ -11,16 +11,14 @@
 		1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD582A0DA1D0D100B32029 /* MainMenu.xib */; };
 		2A0210F3109FE15B00DF01E5 /* PersonArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0210F2109FE15B00DF01E5 /* PersonArrayController.m */; };
 		2A021124109FE91E00DF01E5 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF8AD7109EA712003AF52C /* PreferenceController.m */; };
-		2A021129109FE94600DF01E5 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF8AD7109EA712003AF52C /* PreferenceController.m */; };
 		2A02112C109FE95900DF01E5 /* PreferenceController_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABD396C109EB1D70083E518 /* PreferenceController_Private.m */; };
-		2A02112F109FE97900DF01E5 /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075ED108D3D3500E736AA /* Meeting.m */; };
+		2A02117B109FF63900DF01E5 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF8AD1109EA5EA003AF52C /* AppController.m */; };
 		2A2EED7A1097B3EC00B87E90 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2EED791097B3EC00B87E90 /* SenTestingKit.framework */; };
 		2A2EED861097B41000B87E90 /* TestMyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EB681096896D0035A24D /* TestMyDocument.m */; };
 		2A2EED871097B41000B87E90 /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC3E5E108C400C0005EFAB /* TestPerson.m */; };
 		2A2EED891097B41000B87E90 /* TestMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075FB108D3D7200E736AA /* TestMeeting.m */; };
 		2A374B07109FC7B500E4C47B /* TestAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A374B06109FC7B500E4C47B /* TestAppController.m */; };
-		2AAF8AD2109EA5EA003AF52C /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF8AD1109EA5EA003AF52C /* AppController.m */; };
-		2AAF8ADC109EA7D0003AF52C /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF8ADB109EA7D0003AF52C /* Preferences.xib */; };
+		2A6DDAFA10A244E2004EC5DE /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAF8ADB109EA7D0003AF52C /* Preferences.xib */; };
 		2AAF8AF0109EAAC7003AF52C /* TestPreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AAF8AEF109EAAC7003AF52C /* TestPreferenceController.m */; };
 		2AC075EE108D3D3500E736AA /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AC075ED108D3D3500E736AA /* Meeting.m */; };
 		2ADCE3C6109E3604006803EC /* MyDocument_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A52EB9E109692350035A24D /* MyDocument_Private.m */; };
@@ -293,7 +291,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AAF8ADC109EA7D0003AF52C /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +302,7 @@
 				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
 				1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */,
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
+				2A6DDAFA10A244E2004EC5DE /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,12 +333,9 @@
 				2ADCE3C6109E3604006803EC /* MyDocument_Private.m in Sources */,
 				2A2EED871097B41000B87E90 /* TestPerson.m in Sources */,
 				2A2EED891097B41000B87E90 /* TestMeeting.m in Sources */,
-				2AAF8AD2109EA5EA003AF52C /* AppController.m in Sources */,
 				2AAF8AF0109EAAC7003AF52C /* TestPreferenceController.m in Sources */,
 				2A374B07109FC7B500E4C47B /* TestAppController.m in Sources */,
-				2A021129109FE94600DF01E5 /* PreferenceController.m in Sources */,
 				2A02112C109FE95900DF01E5 /* PreferenceController_Private.m in Sources */,
-				2A02112F109FE97900DF01E5 /* Meeting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +349,7 @@
 				2AC075EE108D3D3500E736AA /* Meeting.m in Sources */,
 				2A0210F3109FE15B00DF01E5 /* PersonArrayController.m in Sources */,
 				2A021124109FE91E00DF01E5 /* PreferenceController.m in Sources */,
+				2A02117B109FF63900DF01E5 /* AppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
